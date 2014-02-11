@@ -1,0 +1,27 @@
+This is UTHM-Thesis-Template Version 0.6
+Release <release date here>
+
+There are two styles (author-year and numerical) available:
+author-year style: (using nice fancy TOC)
+                   UTHM-Thesis-Classic-authoryear-V-06.lyx
+                   UTHM-Thesis-Classic-authoryear-BM-V-06.lyx (Bahasa Melayu)
+                   
+author-year style: (simple TOC): 
+                   UTHM-Thesis-authoryear-V-06.lyx                  
+                   UTHM-Thesis-authoryear-BM-V-06.lyx (Bahasa Melayu)
+
+numerical style:   UTHM-Thesis-numerical-V-06.lyx
+
+Please read the manual "UTHM-Thesis-Manual-V-06.pdf"
+to get familiar with the template. 
+A concise explanation is provided in the manual.
+
+Online information can be found here:
+http://sites.google.com/site/lyxthesistemplate
+
+LyX sources are available here:
+http://code.google.com/p/uthm-thesis-lyx/
+
+Regards
+WAS
+was.uthm(at)gmail.com
