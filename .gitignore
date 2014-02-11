@@ -1,5 +1,10 @@
 *.py[cod]
 
+# LyX temporary files and .svn
+.svn
+uthm-thesis-lyx-read-only
+*.*~
+
 # C extensions
 *.so
 
