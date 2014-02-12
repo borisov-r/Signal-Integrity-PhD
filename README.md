@@ -23,3 +23,8 @@ Template instructions for installation:
 
  * [Cyrillic support to bibtex](http://www.gmarks.org/latex_cyrillic.pdf)
  * [Cyrillic support question](http://comments.gmane.org/gmane.editors.lyx.general/80814)
+
+### Temporary links for the project
+
+ * [General-purpose Semiconductor Simulator An open sourced TCAD software](http://gss-tcad.sourceforge.net)
+
