@@ -87,8 +87,11 @@
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full,headings=small,numbers=noenddot
 \use_default_options true
+\begin_modules
+biblatex
+\end_modules
 \maintain_unincluded_children false
-\language bulgarian
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -105,7 +108,7 @@
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command bibtex8
 \index_command default
 \paperfontsize 12
 \spacing onehalf
@@ -121,7 +124,7 @@
 \pdf_colorlinks true
 \pdf_backref false
 \pdf_pdfusetitle true
-\pdf_quoted_options "linkcolor=red, citecolor=red, urlcolor=red, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
 \papersize a4paper
 \use_geometry true
 \use_amsmath 1
@@ -1278,13 +1281,6 @@ reference "fig:R-rail-geometry"
  be examined using numerical simulation.
  Here is the example of citation.
  
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Rodriguez2009,Poirson2007"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1350,13 +1346,6 @@ name "cha:Literature-Review"
 The sheet metal forming process, in theory, can be viewed as relatively
  straight forward operation where a sheet of material is plastically deformed
  into desired shape.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Schell2002"
-
-\end_inset
-
  has investigated musical melodies.
 \end_layout
 
@@ -1370,14 +1359,7 @@ In practice, however, variations in blank dimensions, material properties
  of a sheet metal forming process difficult.
  Apart from this, springback properties of sheet metal make it extremely
  tedious to design appropriate tooling for a given process.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Poirson2007"
-
-\end_inset
-
- concluded the analysis as shown in 
+  concluded the analysis as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Data-structure"
@@ -1454,7 +1436,7 @@ dddd
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1718,21 +1700,7 @@ Title
 \end_layout
 
 \begin_layout Standard
-According to 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Abdullah1989"
-
-\end_inset
-
- also 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Creme2003"
-
-\end_inset
-
-, bla bla bla.
+According to also , bla bla bla.
 \end_layout
 
 \begin_layout Section
@@ -1765,8 +1733,8 @@ parskip}{0.3cm}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "thesis"
-options "UTHM-ref-style-V-04"
+bibfiles "phd-thesis"
+options "plain"
 
 \end_inset
 
@@ -2073,13 +2041,6 @@ Text text text of first paragraph
 \begin_layout Standard
 Now second paragraph.
  
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Bongers1998"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
