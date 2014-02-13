@@ -4,6 +4,7 @@
 .svn
 uthm-thesis-lyx-read-only
 *.*~
+*.bak
 
 # C extensions
 *.so
