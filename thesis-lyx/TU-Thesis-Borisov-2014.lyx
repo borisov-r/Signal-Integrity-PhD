@@ -84,6 +84,7 @@
 %added in V-05
 \setlength{\nomitemsep}{-\parsep}
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
+\raggedbottom
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full,headings=small,numbers=noenddot
 \use_default_options true
@@ -91,7 +92,7 @@
 biblatex
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language bulgarian
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -111,7 +112,7 @@ biblatex
 \bibtex_command bibtex8
 \index_command default
 \paperfontsize 12
-\spacing onehalf
+\spacing single
 \use_hyperref true
 \pdf_title "Thesis Title"
 \pdf_author "student's name "
@@ -203,7 +204,7 @@ status open
 \backslash
 newcommand{
 \backslash
-titlelineone} {The Thesis Title Line One}
+titlelineone} {Сигнална интегрираност на микровълнови}
 \end_layout
 
 \begin_layout Plain Layout
@@ -212,7 +213,16 @@ titlelineone} {The Thesis Title Line One}
 \backslash
 newcommand{
 \backslash
-titlelinetwo} {Thesis Title Line Two}
+titlelinetwo} {планарни устройства върху}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+titlelinethree} {сложни полупроводникови подложки}
 \end_layout
 
 \begin_layout Plain Layout
@@ -239,9 +249,10 @@ studentno}    {AD99999}
 \backslash
 newcommand{
 \backslash
-supervisor}   {Prof.
- Dr.
- Supervisor} 
+supervisor}   {доц.
+ д-р.
+ инж.
+ Радосвет Арнаудов} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -261,7 +272,7 @@ cosupervisor} {A/Prof.
 \backslash
 newcommand{
 \backslash
-faculty}      {Faculty of Engineering Science}
+faculty}      {Факултет по Микроелектроника}
 \end_layout
 
 \begin_layout Plain Layout
@@ -270,7 +281,7 @@ faculty}      {Faculty of Engineering Science}
 \backslash
 newcommand{
 \backslash
-university}   {Universiti Tun Hussein Onn Malaysia}
+university}   {Технически Университет - София}
 \end_layout
 
 \begin_layout Plain Layout
@@ -279,7 +290,7 @@ university}   {Universiti Tun Hussein Onn Malaysia}
 \backslash
 newcommand{
 \backslash
-loccity}      {Parit Raja}
+loccity}      {София}
 \end_layout
 
 \begin_layout Plain Layout
@@ -288,7 +299,7 @@ loccity}      {Parit Raja}
 \backslash
 newcommand{
 \backslash
-loccountry}   {Malaysia}
+loccountry}   {България}
 \end_layout
 
 \begin_layout Plain Layout
@@ -315,7 +326,7 @@ submitdate}   {1}
 \backslash
 newcommand{
 \backslash
-submitmonth}  {January}
+submitmonth}  {Юни}
 \end_layout
 
 \begin_layout Plain Layout
@@ -324,7 +335,7 @@ submitmonth}  {January}
 \backslash
 newcommand{
 \backslash
-submityear}   {2012}
+submityear}   {2014}
 \end_layout
 
 \end_inset
@@ -399,11 +410,30 @@ titlelinetwo
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase
+\backslash
+titlelinethree
+\end_layout
+
+\end_inset
+
+
 \family default
 \series default
 \size default
 
-\begin_inset VSpace 1.8cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -423,7 +453,7 @@ studentname
 \end_inset
 
 
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -1228,10 +1258,10 @@ pagestyle{fancy}
 \end_layout
 
 \begin_layout Chapter
-Introduction
+Увод
 \begin_inset CommandInset label
 LatexCommand label
-name "cha:Introduction"
+name "cha:Увод"
 
 \end_inset
 
@@ -1258,6 +1288,54 @@ The Numisheet Conferences is conducted once every three years in location
  The Numisheet Conference Proceedings include the latest developments in
  metal forming technology, which is a rapidly growing and challenging opportunit
 y for application of science to industry.
+\end_layout
+
+\begin_layout Section
+Мотивация
+\end_layout
+
+\begin_layout Standard
+Повечето съществуващи монолитни микровълнови интегрални схеми (MMIC) използват
+ възможностите за проектиране на топология върху един от словете, така че
+ да се получат пасивни компоненти.
+ Например, предавателни линии или свързани линии се произвеждат използвайки
+ най-горния метален слой върху подложка например от галиев-арсенид (GaAs),
+ която е свързана към маса.
+ Разбира се съществуват и така наречените метал - изолатор - метал кондензатори
+ и air bridges (въздушни мостове), които са по-скоро изключение.
+\end_layout
+
+\begin_layout Standard
+Типично в ММИС технологията, тънък слой от силициев нитрид 
+\begin_inset Formula $(Si_{3}N_{4})$
+\end_inset
+
+, или полиамид се израства над подложка от галиев-арсенид за пасивация.
+ Ако допълнителен метален слой се добави върху пасивиращия слой, то получената
+ структура може да бъде използвана за дизайн на пасивен компонент състоящ
+ се от два слоя.
+ Такива пасивни компоненти се използват за увеличаване плътността и подобряване
+ на функционалността на монолитните интегрални схеми.
+\end_layout
+
+\begin_layout Standard
+Едно от предимствата на двуслойната топология в сравнение с еднослойната
+ конфигурация е увеличаването на взаимната връзка в свързаните предавателни
+ линии.
+ Дизайн на насочени отклонители с вертикално свързани предавателни линии,
+ позволява по-голям коефициент на връзка в сравнение с насочен отклонител,
+ изграден от странично свързани микролентови линии.
+ Ограниченията върху минималните разстояния от фабриката производител много
+ често не позволяват проектирането на насочени отклонители с голям коефициент
+ на връзка, разположени върху един метален слой.
+\end_layout
+
+\begin_layout Section
+Цели
+\end_layout
+
+\begin_layout Section
+Литературен обзор
 \end_layout
 
 \begin_layout Section
@@ -1332,25 +1410,18 @@ name "fig:R-rail-geometry"
 \end_layout
 
 \begin_layout Chapter
-Literature Review
+Изследвани структури
 \begin_inset CommandInset label
 LatexCommand label
-name "cha:Literature-Review"
+name "cha:Литературен-обзор"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-The sheet metal forming process, in theory, can be viewed as relatively
- straight forward operation where a sheet of material is plastically deformed
- into desired shape.
- has investigated musical melodies.
-\end_layout
-
 \begin_layout Section
-Practical Usage
+Практическо приложение
 \end_layout
 
 \begin_layout Standard
@@ -1416,7 +1487,7 @@ N_{1} & N_{2} & N_{3}\end{array}\right]^{T}\label{eq:ddssdd}
 as mention in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "cha:Introduction"
+reference "cha:Увод"
 
 \end_inset
 
