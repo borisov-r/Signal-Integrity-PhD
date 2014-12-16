@@ -2,7 +2,7 @@ Signal-Integrity-PhD
 ====================
 
 My PhD @ Tu-Sofia - Microelectronics
-For convinience I'll write my thesis here.
+For my convinience I'll write my thesis here.
 
 ### Description
 
@@ -18,6 +18,12 @@ Main source for the thesis is one article: [Device-level simulation of wave prop
 Template instructions for installation:
 
  * [lyx-thesis-template](https://sites.google.com/site/lyxthesistemplate/)
+
+### Arch linux required packages
+
+Packages: texlive-most texlive-langcyrillic
+
+ * [TEX_live](https://wiki.archlinux.org/index.php/TeX_Live)
 
 ### Dependencies
 
