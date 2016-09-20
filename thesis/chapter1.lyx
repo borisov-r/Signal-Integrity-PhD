@@ -1,0 +1,271 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extreport
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language bulgarian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 2cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Литературен обзор
+\end_layout
+
+\begin_layout Standard
+В повечето случаи под сигнална интегрираност (СИ) (Signal Integrity - SI)
+ се разбира анализ, дизайн и валидиране на връзките между отделни схеми
+ с цел успешно предаване на цифрови сигнали.
+ За тази цел СИ взима идеи и практики от различни части на електроинженерството.
+ Хората незапознати с аналоговата и радио електроника и тяхното разнообразие,
+ може да сметнат СИ за мистерия, понякога дори непоследователна, а често
+ и трудна за разбиране.
+ Дизайнерите на цифрова логика, които са свикнали да работят с двоична логика
+ и схеми, често я смятат за неточна, а аналоговата природа на сигналната
+ интегрираност за разочароваща.
+ При анализа, познанията в RF и аналоговата електроника помагат, но съвременните
+ CAD системи позволяват на всеки да създаде симулация на СИ и да предвиди
+ работата на схемата.
+ Въпреки това, като цяло разработчиците на CAD софтуер не винаги рекламират
+ или понякога не разбират напълно ограниченията на техните продукти.
+ Използван експертно софтуера може да бъде много мощно средство за анализ,
+ но ако бъде използван неправилно, то има значителни последствия.
+ Инженерите занимаващи се със СИ и мениджърите, работещи с предаване на
+ импулсни сигнали, могат да избегнат грешки, ако знаят основните принципи
+ свързани със сигналната интегрираност.
+ 
+\end_layout
+
+\begin_layout Standard
+Важността на сигналната интегрираност е установена на практика още в началото
+ на 19 век, когато при прекарването на първия трансатлантически кабел, мениджъри
+те и инженерите са нямали основни познания за разбирането и управлението
+ на техническия проект, което води до сериозни технически грешки.
+  
+\end_layout
+
+\begin_layout Standard
+The First Transatlantic Telegraph Cable Managers and engineers not having
+ a fundamental understanding of the technical principles governing a project
+ are more likely to make serious technical mistakes, especially when pushing
+ the state of the art.
+ Perhaps the first time this became ap- parent with regards to a significant
+ high-speed signaling project occurred on August 16, 1858.
+ That was when Great Britain’s Queen Victoria sent a welcoming message to
+ U.S.
+ President Buchanan over the first successfully laid transatlantic telegraph
+ cable [2–4].
+ This 3,800-km (about 2,400-mile) length of submarine cable connected 
+\end_layout
+
+\begin_layout Standard
+12 Introduction to Signal Integrity Ireland with Newfoundland and could
+ not be financially viable unless it operated at speeds similar to dry land
+ telegraph cables.
+ Unfortunately, signal integrity problems caused the Queen’s 99-word inaugural
+ message to take nearly 17 hours for trans- mission instead of several minutes
+ as had been expected [2].
+ The roots of this nineteenth-century disaster are both managerial and technical.
+ The underlying management fault was that the investors and managers did
+ not possess a rudimentary understanding of telegraphy.
+ Because of this they hired a chief electri- cian lacking a thorough background
+ in electrical engineering or telegraphy theory.
+ This decision was at the root of the cable’s technical flaws.
+ Without this knowledge the chief electrician was unable to understand the
+ latest technical developments and instead relied on his intuition to design
+ the cable and instrument set.
+ These intuitive designs were appealing to management but inappropriate
+ for the task.
+ Some outside experts (most notably Professor William Thompson, later to
+ be Lord Kelvin) had questioned the cable’s electrical design and the electrical
+ equip- ment to be used with it.
+ With his theoretical background, Thompson knew that the electrical characterist
+ics of a long submarine cable were significantly different from the open
+ air cable that had earlier been used in proof-of-concept experiments, and
+ he correctly believed that the submarine cable would distort high-speed
+ Morse code pulses.
+ He preferred another cable design and suggested transmitting and re- ceiving
+ equipment with very different electrical characteristics than the equipment
+ designed by the chief electrician.
+ Because of management’s weak technical back- ground, they were unable to
+ ask the kinds of probing, focused questions needed to resolve the technical
+ debate between Thompson and the chief electrician.
+ After several false starts, the intuitively designed but electrically flawed
+ cable was finally laid, and direct current from a battery in Ireland was
+ detected by instru- ments in Newfoundland.
+ This low-frequency test seemed to vindicate the design, but it was soon
+ discovered that high-speed pulses could not be properly received.
+ In fact, signaling was only possible at speeds that were far too slow to
+ be profitable.
+ Management was unable to properly judge the merits of the various approach-
+ es to debug suggested by staff.
+ Instead of using the sensitive transmitting and re- ceiving instruments
+ purposed by Thompson (which we now know would have significantly improved
+ the signaling speed), they authorized the chief electrician to increase
+ the voltage of the transmitted pulses.
+ The misguided idea was that the higher voltage would “push” the pulses
+ down the cable with greater force, allow- ing signaling to occur at high
+ speeds.
+ In fact, this did not improve the signaling rate because the fundamental
+ problem was pulse distortion caused by the cable’s large RC delay, not
+ signal strength.
+ The large RC delay was the critical difference between the dry-land cables
+ used during the proof-of-concept experiments and the submarine cable.
+ The dry-air cables used air as insulation, but the submarine cable used
+ a waterproof insulation that greatly increased the capacitance.
+ We will return to this effect in Section 1.7.
+ The large RC delay so distorted the pulses that only the slowest of them
+ could be properly received.
+ Modern SI engineers would say that intersymbol interference was created
+ by the way in which the cable attenuated high frequencies (the high- speed
+ Morse pulses) but allowed low frequencies (slow speed pulses, including1.3
+ What Is a Pulse? 3 the battery’s DC) to pass.
+ As we will see in later chapters, this same behavior also occurs when signaling
+ over modern circuit board traces.
+ During debug the sending voltage was incrementally increased to excessively
+ high values in an unfortunate attempt to improve signaling speed.
+ This destroyed the cable within a month of the Queen’s inaugural message.
+ In fact, the cable never sent any commercial telegrams and was a financial
+ failure that set off investigations of financial fraud and technical mismanagem
+ent and ruined several careers.
+ Modern SI engineers and those who manage them can avoid the kinds of sys-
+ temic problems experienced during the 1858 cable project by learning the
+ ways in which pulses misbehave when traveling along long lines and learning
+ techniques for correcting these types of errors.
+ We begin by defining a pulse, then examine the time and frequency domains,
+ and describe two of the most important physical constants used in signal
+ integrity work.
+ We conclude by briefly discussing the effects that many drivers simultane-
+ ously switching have on power supply noise.
+\end_layout
+
+\begin_layout Section
+Transmission Line Fundamentals
+\end_layout
+
+\begin_layout Standard
+As illustrated in Figure 6.1, a transmission line is formed with two or more
+ con- ductors.
+ The signal conductor carries the signal energy from a generator to a load,
+ and the second conductor (the return) completes the circuit by returning
+ the signal current back to the generator.
+ The signal conductor could be a microstrip trace and the return path the
+ underlying ground plane.
+ The generator is any signal launching device, such as an ASIC I/O driver.
+\end_layout
+
+\begin_layout Subsection
+What Is the Signal Return Path?
+\end_layout
+
+\begin_layout Standard
+Frequently, signal integrity engineers speak of the “signal return path,”
+ but often it is taken for granted and not fully understood.
+ Studying the return path is impor- tant because it determines the trace’s
+ capacitance, inductance, resistance, and noise coupling.
+ Because capacitance is often more intuitive than inductance, we will ignore
+ inductance for now and focus on the importance of the return path in determin-
+ ing the capacitance.
+ Resistance is also affected by the return path, but we will wait until
+ Chapters 7 and 8 to discuss this important topic.
+\end_layout
+
+\begin_layout Section
+Understanding Microstrip and Stripline Transmission Lines
+\end_layout
+
+\begin_layout Section
+Understanding Trace-to-Trace Coupling
+\end_layout
+
+\begin_layout Section
+Understanding Crosstalk
+\end_layout
+
+\begin_layout Section
+Understanding Signal Reflections
+\end_layout
+
+\begin_layout Section
+Termination Strategies
+\end_layout
+
+\begin_layout Section
+Differential Signaling
+\end_layout
+
+\end_body
+\end_document

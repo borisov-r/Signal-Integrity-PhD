@@ -1,0 +1,475 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extreport
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language bulgarian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 2cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Окачествяване на пасивни и активни устройства 
+\begin_inset Newline newline
+\end_inset
+
+чрез “контактни” и “безконтактни” измервания
+\end_layout
+
+\begin_layout Standard
+Съвременните методи за характеризиране включват както методи с директно
+ измерване радиочестотните характеристики, така и безконтактни методи като
+ измерване посредством 
+\begin_inset Quotes gld
+\end_inset
+
+Електромагнитни скенери
+\begin_inset Quotes grd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "emscan"
+
+\end_inset
+
+, 
+\begin_inset Quotes gld
+\end_inset
+
+Оптo-електромагнитни скенери
+\begin_inset Quotes grd
+\end_inset
+
+[], 
+\begin_inset Quotes gld
+\end_inset
+
+Безехови камери
+\begin_inset Quotes grd
+\end_inset
+
+[], 
+\end_layout
+
+\begin_layout Standard
+Ниско бюджетен скенер работещ в близката област за радиочестотни измервания
+ (Радослав Борисов, Калоян Златков, Пламен Данков).
+ Скенерите за измерване на електромагнитно поле работещи в близката зона
+ се използват за микровълнови и антенни измервания, както и за измервания
+ свързани с електромагнитната съвместимост (ЕМС).
+ Скенера измерва пространственото разпределение на електрическия заряд,
+ който се детектира чрез една или няколко електромагнитни сонди, поставени
+ в близката област на тестваното устройство.
+ Тази публикация има за цел да опише процеса на изграждане на ниско бюджетен
+ електромагнитен скенер работещ в близката област, използвайки стандартно
+ оборудване за микровълнови измервания и 3D принтер.
+ Критичните компоненти в дизайна са описани подробно и две устройства са
+ измерени, използвайки така направения скенер.
+ Използвайки системата една пасивна антена работеща в L обхвата и един балансен
+ усилвател бяха измерени.
+ Допълнителната обработка на измерените данни се извършва с помощта на софтуер
+ с отворен код за визуализация и допълнителна обработка - Paraview[1].
+ Някои от предимствата на измерванията със скенер работещи в близката област
+ включват високата точност, високата производителност (голямо количество
+ данни) и възможността за пълното характеризиране на измерваното устройство.
+\end_layout
+
+\begin_layout Standard
+Introduction The developments of modern technologies have increased a systems
+ complexity and new problems like signal integrity and coupling between
+ the system components have appeared.
+ One of the methods for characterization of the device performance is near-field
+ scanning technique.
+ Electro­magnetic (EM) near-field scanner determines the spatial distribution
+ of electrical quantity acquired in a near field region of the device using
+ single or multiple probes.
+ Using numerical post-processing techniques it is possible to convert measured
+ quantity into electr­omagnetic field.
+ Typically near-field scanners are used for antenna measurements [2] or
+ electro­magnetic interference measurements [3].
+ The advantages of near-field measurements include high accuracy, high throughpu
+t (or data rate), a complete characterization of device under test (DUT),
+ ability to control different environment effects, minimal requirements
+ and compatibility with special project requirements.
+ In RF system designs the most common technique for characterization of
+ the electromagnetic field is using simulators.
+ Complex designs are divided into sub areas and simulated individually,
+ because of computation power and time required for solving the problem
+ increases with the size of structure area.
+ Basically the simulators solve Maxwell’s equations using different approaches
+ like MoM, FEM, FDTD etc.
+ The structure is described using text files or it is constructed using
+ graphical interface of the software in 2.5D or 3D.
+ The definition of the ports shows where the electromagnetic energy enters
+ the structure and how it exits.
+ The scattering matrix shows the energy scattered from the structure at
+ the port’s plane.
+ Increasing the ports number adds to the simulation time drastically.
+ Simulated parts of the complex problem could be combined using S-parameters
+ into more complex model of the device or the system.
+ This technique is widely used, but it still doesn’t give the full picture,
+ due to the fact, that there is coupling between the individually simulated
+ parts, that we don’t take into account.
+ Usually simulated results are in good agreement with the measurements.
+ The so explained process takes a lot of steps and good understanding of
+ the problem is needed.
+ Good knowledge about the technologies used in the production of the structure
+ and experience with the simulator is desirable.
+ The simulation technique solves coupling problems in pre and post production
+ phase and determines optimal size or shape of the structures.
+ Large simulations are usually undesirable and the time needed for solving
+ the equations and visualization of the EM field could take days, even on
+ servers with 8-cores and 32 GB RAM.
+ Near-field scanning technique could be used for rapid measurement of the
+ EM field, verification of prototypes, layout optimization and finding coupling
+ problems between different modules.
+ Direct measurements give relative information about the distribution of
+ the field.
+ Additional computation is needed to get absolute results for the distribution
+ of the field in the far-field region.
+ The scanner could maximize designer’s productivity and is focused on solving
+ instead of finding EMC problems, which leads to reduced number of board
+ spins.
+ Measured data is stored and could be used for comparison between board
+ iterations.
+ It is possible to get immediate feedback for the effectiveness of the correctiv
+e measures.
+ Using the near-field scanner the designer’s productivity could be optimized,
+ design and compliance cost could be reduced and of course the time to market
+ is reduced significantly.
+ The main purpose of this article is to describe the process of building
+ small low cost near-filed scanner using standard equipment and 3D printer.
+ This paper describes a methodology for the creation of a small near-field
+ EM scanner using standard RF measurement equipment and 3D printer [4].
+ Verification of the build system is done using two devices – one passive
+ and one active device that work in different sub bands of the RF spectrum.
+ Small L-band left-hand circular polarized patch antenna is measured using
+ the scanner with two types of RF probes for verification.
+ Using the scanner we were able to generate animation of the currents distributi
+on on the patch surface for set of frequencies.
+ The measurements show that the phase rotates as the wave propagates through
+ space in left direction, just as the theory predicts.
+ Balanced amplifier has been measured using the same technique and the electric
+ and magnetic fields distributions are shown on graphics.
+ Near-field scanner A near-field scanner consists of a pulsed network analyzer
+ (PNA) connected to an RF probe carried by a low cost 3D printer.
+ The block diagram of the near-field measurement system is shown on Fig.1.
+ The network analyzer is used to generate and measure the response of the
+ DUT.
+ PC software controls the movement of the RF probe mounted to the 3D printer
+ and synchronizes measured data with the movement.
+\end_layout
+
+\begin_layout Standard
+Fig.1.
+ Simplified block diagram of near-field scanner.
+\end_layout
+
+\begin_layout Standard
+Fig.2.Photo of near-field measurement system.
+ Photo of the assembled system is shown on Fig.2 in laboratory.
+ Different approach is described at the end of this article, where a low
+ cost portable transceiver with receive signal strength indicator (RSSI)
+ is used to measure the input level taken from the RF probes.
+ Pulsed Vector Network Analyzers (PVNAs) are typically used to evaluate
+ the performance of microwave components / devices under non-continuous
+ operation.
+ These measurements are essential when dealing with pulsed-RF applications
+ like radar or burst-mode transmitters, or in semiconductor device characterizat
+ion when dissipation problems need to be avoided.
+ Photo of PNA-L N5230C is shown on Fig.3.
+ Network analyzer is expensive equipment even for RF laboratories, but the
+ functionality needed for the experiments is irreplaceable.
+ They provide good dynamic range and precise frequency generation in wide
+ bandwidth.
+ Sweep option provides ability the DUT to be tested with different input
+ powers, while the response is measured.
+ This is convenient for the initial tunings of the system, where the optimal
+ input power should be considered for the field measurements, so that we
+ could provide the best dynamic range of the system.
+ The PNA could be programmed using the standard GPIB interface or using
+ telnet over Ethernet.
+ The control software uses telnet for communication with the PNA and defines
+ frequency range for the measurement, the number of measurement frequencies
+ and receives the S-parameters data.
+ Different types of probes are used to measure the electromagnetic field.
+ Open ended RF probes (Fig.3a and Fig.3b) are used to measure electrical component
+ (E-field) of the field, while the magnetic component (H-field) is measured
+ using a closed loop RF probe like the one shown on Fig.3c.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.3.PNA-L N5230C.
+ The scanner system could be divided in 3 parts from engineering point of
+ view – mechanical, electrical and software parts.
+ Mechanical part consists of all mechanical parts like Arduino PCB, RF probes,
+ bearings, motors, belts, pulleys, cables, measurement equipment and more.
+ The limitations in the mechanical parts define the resolution of the near-field
+ scanner.
+ RepRap has typical resolution of 0.1 mm on all axes, which defines the scanner
+ resolution.
+ Electrical part consists of Arduino Mega board with RAMPS 1.4 shield [5]
+ used to control the 3D printer’s movement.
+ Stepper drivers control the movement of the RF probe precisely.
+ Typically rf boards have traces and gaps in orders of 0.15 to 0.2 mm.
+ More precise mechanics is needed for on wafer or rf chip measurements.
+ Software part could be divided into firmware and pc software.
+ The firmware used in the near-field scanner is open source and is called
+ Sprinter [6].
+ It is configured to work with RAMPS hardware and represents a G-code interprete
+r [7].
+ Standard G-code commands are used to define the coordinate system (relative
+ / absolute), axis, movement step and movement speed.
+ Arduino is using USB to serial converter for the connection to PC and the
+ software.
+ From PC software the RepRap is seen as standard COM port working on 115200
+ baud rate.
+ Additional software written in python controls the rf probe’s movement
+ and to collects measured data from the PNA synchronously.
+ Before each measure­ment a number of parameters are defined: set of frequen­cie
+s, measurement points in X, Y and Z directions and step size (measurement
+ resolution).
+ The PNA measures the amplitude response and phase for each point and for
+ all set of frequencies.
+ Using only this option one scan collects information about the electromagnetic
+ field distribution for the given set of frequencies as amplitude and phase.
+ Measured data is saved as standard Excel file for post-processing later
+ on.
+ Additional open source software called Paraview [8] is used for 3D visualizatio
+n and post-processing of the collected data.
+ The collected data could be compared with previous results from measurements
+ and analyzed.
+ The following two examples show the briefly explained procedure and some
+ of the results collected using the near-field scanner.
+ L-band antenna The scanner is used to measure the performance of L-band
+ patch antenna with left handed circular polarization shown on Fig.4.
+ The patch was scanned using H-field probe in range 2.0 – 2.4 GHz with 10
+ MHz step.
+ Fig.5 shows graphically the results from collected data.
+ Amplitude distribution of the surface currents is shown on Fig.5a and Fig.5b
+ for two frequencies – 2.15 and 2.3 GHz.
+ Dynamic ranges of the measurements is around 45 dB and we could conclude
+ that measured field is stronger for 2.3 GHz, which means that working at
+ this frequency the efficiency of the antenna will be higher.
+ The phase distribution is shown on Fig.5c and Fig.5d.
+\end_layout
+
+\begin_layout Standard
+Fig.4.Photo of near-field measurement system.
+\end_layout
+
+\begin_layout Standard
+Fig.5.Photo of near-field measurement system.
+ The phase distributions of the field for single frequency 2.3 GHz are measured
+ on two different distances from the patch’s surface – 1 mm and 3 mm.
+ From the phase distribution we can see that the relative phase has changed
+ in left direction from Fig.5c to Fig.5d.
+ This shows that we are working with left hand circular polarized antenna.
+ The overall scanned frequencies are 40 for 2.0 – 2.4 GHz band and the dynamic
+ range of the measurements is around 50 dB using the PNA.
+ The size of the patch antenna is 59 x 59 mm and the scanned area is 75
+ x 75 x 62.5 mm.
+ Simple calculations show that single scan with 1 mm resolution will give
+ 75 x 75 = 5625 measurement points just for one plane.
+ If we set the measurement to 40 frequency points we get 5625 x 40 = 225000
+ values just for the amplitude on one plane.
+ From this simple example it is obvious that the main problem is the handling
+ of such big data structures effectively.
+ Using Paraview software it is possible to be handled and visualized big
+ data structures even on laptops and standard computers.
+ Different filters and cuts could be applied to the data for processing.
+ It is possible collected data to be exported in video format as animation.
+ This gives unique opportunities for visualization of DUT‘s resonant effects.
+ Balanced amplifier Using the same technique another device was scanned.
+ The balanced amplifier shown on Fig.6.
+ works in the frequency range 700 – 900 MHz.
+ The input of the amplifier is connected to the first port of the PNA, while
+ the output is terminated with 50 load.
+ The second PNA’s port is connected to the H-type RF probe and S21 parameter
+ is measured.
+ Measured data is shown on Fig.7a and Fig.7b.
+ The orientation of the RF probe defines detectable currents on the surface
+ of the PCB.
+ Shown data is for such orientation of the probe, that it could detect only
+ RF currents flowing along the horizontal traces between the RF input and
+ the RF output.
+ The vertical currents tend to be blurry and unclear on the visualization
+ graphics.
+ Even with single H probe we could easy distinguish, where the amplifying
+ elements are.
+ The balanced amplifier consists of two hybrid couplers one at the input
+ and one at the output.
+ The input hybrid divides the input power and split the signal in 90 deg.
+ phase, so that the active components in the circuit have less coupling
+ and better isolation between each other.
+ The output hybrid coupler combines the amplified signal at the output in
+ phase.
+ Using this technique the output power increases with ~3 dB compared to
+ the amplification from single amplifier device.
+ Scanned area of the balanced amplifier is 45 x 90 x 3 mm with 1 mm resolution.
+ On Fig.7a and Fig.7b are shown amplitudes distribution of the field for two
+ frequencies respectively 760 MHz and 860 MHz.
+ Visual analysis of the data shows that the field around the RF input is
+ stronger at 760 MHz, which simply means that we don’t have very good matching
+ for these frequency, while for 860 MHz less energy is lost in the matching.
+ Another interesting observation is that we have stronger field around the
+ coil elements at the output of the active devices and this field is stronger
+ for the second frequency.
+ Fig.8 shows the relative phase distribution for the same frequencies fig.8a/8b
+ respectively 760 MHz and 860 MHz.
+ Visually we could see from collected data that the phase distribution is
+ somehow blurry for the lower frequency, while for 860 MHz the phase difference
+ is more distinguishable.
+ Upper part of the circuit has relative phase 90 degrees with respect to
+ the bottom part defined by the 90-deg hybrid couplers.
+ The phases near the input and output are influenced by the cables and the
+ connectors to the PCB.
+ There the phases are mixed with the different reflections from the design
+ of the board and the connectors.
+ The amplifier has ~20 dB gain in the working bandwidth and this defines
+ the relatively low input power that we provide to the input in order to
+ get around 0 dB at the output.
+ After the amplification stage the phases are much more defined, because
+ the signal is stronger and the voltage generated by the probe is higher.
+ This explains the better phase distribution at the output.
+\end_layout
+
+\begin_layout Standard
+Fig.6.Balanced amplifier measured with the scanner..
+\end_layout
+
+\begin_layout Standard
+Fig.7.Surface currents amplitude for a) 760 b) 860 MHz .
+\end_layout
+
+\begin_layout Standard
+Fig.8.Surface currents relative phases for a) 760 b) 860 MHz.
+ Software Different types of software skills are needed for the design of
+ a near-field scanner system.
+ Most of the software used for these measurements is open source.
+ There are many different approaches to combine the available software with
+ measurement device to get even lower cost near-field scanner.
+ One such example is the usage of microprocessor with RF front.
+ Using Arduino board combined with appropriate transmitter and receiver
+ working in the RF band of interest it is possible to get dynamic range
+ better than 30 dB for amplitude measurements.
+ Most important part of the project is the selection of device that could
+ generate CW signal for the desired band.
+ Example of such approach is the usage of low cost transceiver from ATMEL
+ with integrated RF front end like ATMEGA128RFA1.
+ Using the RSSI (received signal strength indicator) as an absolute measuring
+ device we were able to measure the amplitude field distribution for single
+ frequency with dynamic range up to 30 dB.
+ Using the same processor the EM field of the patch antenna could be measured
+ within the range 2.4 to 2.485 MHz in 5 MHz steps.
+ In order this to be accomplished successfully additional step should be
+ considered for synchronization between the transmitter’s and receiver’s
+ frequency.
+ Most difficult part of the software is the synchronization between the
+ measured data and control software that generates the movement of the 3D
+ printer and respectively moves the RF probe.
+ The software should be able to process and collect the data from the PNA
+ and move the RF probe fast enough and with the desired accuracy.
+ All python software is published in repository [9].
+ Conclusion This article tries to present a work done for solving a complex
+ problem like near-field scanning technique using existing equipment and
+ tries to describe the process of building low cost near-field measurement
+ system.
+ A basic setup for RF measurements of electromagnetic field has been set
+ and two radio frequency devices were measured.
+ Measured data was presented visually and analyzed.
+ The potential of the approach is not limited to EM measurements only and
+ could be applied to temperature measurements also.
+ Finer near-field scanners [10] need better mechanical structure and finer
+ stepper control for IC measurements.
+ Software part is applicable to all single probe scanners.
+ Acknowledgements The authors thank to all the persons involved in the open
+ source software movement and RepRap project.
+ Without their hard work and skillful designed software this project would
+ be much harder to for us and we appreciate their devotion.
+ The authors thank to Scientific Research Found of Sofia University St.
+ Kliment Ohridski for the support.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

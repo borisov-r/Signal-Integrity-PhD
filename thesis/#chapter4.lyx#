@@ -1,0 +1,524 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extreport
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language bulgarian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 2cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Изследване характеристиките на
+\begin_inset Newline newline
+\end_inset
+
+предавателни линии на границата диелектрик-полупроводник
+\end_layout
+
+\begin_layout Section
+Ефективна диелектрична проницаемост на предавателни линии върху сложни полупрово
+дникови материали
+\end_layout
+
+\begin_layout Standard
+Нов метод за измерване на ефективната диелектрична проницаемост в предавателни
+ линии върху сложни полупроводникови подложки, използвайки данни от ЕМ симулатор
+ и директни измервания върху чип са представени в тази част.
+ Методологията включва структури обикновенно реализирани върху сложна полупровод
+никова подложка и може да бъде използвана при процедура 
+\begin_inset Quotes gld
+\end_inset
+
+калибриране
+\begin_inset Quotes grd
+\end_inset
+
+ или 
+\begin_inset Quotes gld
+\end_inset
+
+de-embedding
+\begin_inset Quotes grd
+\end_inset
+
+ на предвателни линии, нееднородности или 
+\begin_inset Quotes gld
+\end_inset
+
+падове
+\begin_inset Quotes grd
+\end_inset
+
+ на чипа.
+ Изчисляването на ефективната диелектрична проницаемост от характеристичния
+ импеданс и константата на разпространение на предложените структури е напълно
+ достатъчно за характеризирането използвайки измерени или симулирани S-параметри.
+\end_layout
+
+\begin_layout Standard
+Методологията е приложима за окачествяване на диелектрични или многослойни
+ полупроводникови подложки без загуби, както и със загуби в широка честотна
+ лента.
+ Друго предимство на методологията е използването на предавателни линии
+ с физически размери многократно по-малки от четвърт дължина на вълната
+ за най-високата работна честота на изследваното устройство.
+ По този начин се спестява реална площ, която може да бъде използвана за
+ проектиране на реални устройства, а не характеризирането им.
+ Не на последно място методологията е съвместима с някои от елементите използван
+и при т.нар.
+ калибровка - 
+\begin_inset Quotes gld
+\end_inset
+
+TRL (Thru, Reflect, Line).
+\end_layout
+
+\begin_layout Standard
+Една от предпоставките за непрекъснатото търсене на преносими и все по интегрира
+ни компоненти и подсистеми е увеличаващото се търсене на безжични комуникации
+ за лична употреба и увеличаващият се брой приложения.
+ В следствие на това предизвикателствата към полупроводниковите подложки,
+ сложността на интегралните схеми, мултичипни модули и асемблирането расте.
+ Днес за намаляване на паразитните капацитети и увеличаване плътността на
+ връзките между отделните чипове се използват 3D методи на асемблиране при
+ големи интегрални схеми или схеми използващи както цифрови така и бързи
+ аналогви сигнали - специализирани ИС за смесени сигнали.
+ Много често полупроводниковите подложки имат значителни омични загуби,
+ поради крайната си проводимост.
+ Характеризирането на активните и пасивните елементи проектирани върху такива
+ подложки и тяхното взаимно влияние може да бъде подложено на въпрос, ако
+ не бъдат използвани подходящи методи за измерване и окачествяване.
+ При условие, че размерите на проектираните устройства не са електрически
+ малки, се използват т.нар.
+ методи с разпределени параметри за изследването.
+ Основните методи използвани за симулиране параметрите на устройствата са
+ FDTD
+\end_layout
+
+\begin_layout Standard
+Frequently these substrates possess an inherently lossy characteristic,
+ which circumstance deteriorate their performance or puts the accuracy of
+ active and passive elements modeling under question.
+ At frequencies where the dimensions are not electrically small, it is necessary
+ to use complex distributed models of investigation.
+ General full wave numerical methods such as FDTD, FEM, MoM and PEEC have
+ been applied to model these structures successfully.
+ The basic key to build successful models and perform genuine electromagnetic
+ simulations of topology layout is the knowledge of complex characteristic
+ impe­dance and propagation constant in transmission line structures on
+ the upper interconnect levels.
+ Ultimately, it is necessary for the IC industry to characterize these losses
+ and novel dielectric properties of such sequenced isolation and semiconductor
+ layers, with different thicknesses and physical dielectric permittivity,
+ in order to build a representative interconnect characterization database
+ [1].
+ The most reliable information about wave propagation in multilayer metal/dielec
+tric/semiconductor systems is knowledge of the effective dielectric constant,
+ derived straightforwardly from the propagation constant, more precisely
+ its imaginary part – the phase constant.
+ Previous research has demonstrated S-parameter characterization of interconnect
+ transmission lines, based on two-port measurements, R-L-G-C modeling and
+ extraction of characteristic impedance Zc and propagation constant γ [1,
+ 2, 3].
+ The core of our approach is the same but differs in some aspects from the
+ well-known procedure: a) we rather implement and measure one-port open-end
+ stubs instead of relatively long transmission lines with two ports); b)
+ short-end stubs are not included in the measurement test set-up in order
+ to eliminate the inserted parasitic inductance of grounding through-hole
+ vias and because of the impossibility to build them by some technologies;
+ c) two-port measurements are conduc­ted on a transmission line with the
+ same length, width and contact pads (launchers) geometry as the open-end
+ stub; d) Zc and γ are extracted directly from S-para­meter data of the
+ one-port capacitive and inductive stubs.
+ In many cases, existing de-embedding structures and some of the TRL calibration
+ standards in the test set-up could be easily implemented to acquire the
+ necessary one-port stub S-parameters for calculations of the propagation
+ constant.
+ The effective dielectric constant is derived from the phase constant [5].
+\end_layout
+
+\begin_layout Subsection
+Theory of transmission line stubs
+\end_layout
+
+\begin_layout Standard
+Open and short stubs are widely used in microwave designs as capacitor and
+ inductor to ground.
+ For example many DC biasing circuits implement stubs to achieve higher
+ isolation between the power supply and the RF signal.
+ The size of the stubs is small enough to build LC filters and matching
+ networks, when their length is smaller or equal to λline /4.
+ Conventional small signal z-, y-, and ABCD-parameters, are not suitable
+ for high frequency inter­con­nect charac­terization, because open and short
+ termi­nations re­quired to measure this data cannot be easily implemented
+ in “on-wafer” applications and deteriorate performance by insertion of
+ impedance parasitics.
+ The “short” circuit terminations possess parasitic induc­tance of GND via,
+ while “open” circuit terminations have external capa­citance, due to the
+ fringing effect of the edge electric field at high fre­quen­cies.
+ S-parameter measurements, defined in terms of inci­dent and reflected waves
+ in a controlled 50-Ω measure­ment system, reliably characterize inter­con­nect
+ high fre­quency responses.
+ The input impedance Zin of a given interconnect trans­mis­sion line can
+ be readily derived from the simulated or measured two-port S-parameters
+ [2].
+ Placing the S-para­me­ters in a schematic simulator and providing ideal
+ ground connection at one of the ports can give us information about the
+ input impe­dance, when the line is shorted to ground.
+ The same is valid if one of the ports is left open.
+ (1a) (1b) From transmission line theory and Telegrapher equations Zinput
+ short and Zinput open for short lines with length l < λ /4 the input impedance
+ is defined from the equivalent circuit on Fig.
+ 1.
+\end_layout
+
+\begin_layout Standard
+From Fig.1 and the expression of the input impedance of a loaded transmission
+ line, when the load Zc is 0 (short) or ∞ (open), the following equations
+ are valid for Z: (2a) (2b) Above equations represent infinite small part
+ of a regular long tran­smission line when loaded with ZC = 0, ∞ - (short)
+ and (open) impedance.
+ First equation defines the losses in the TRL metal layers and includes
+ skin-effect.
+ Second equation is connected to the substrate die­lec­tric losses, caused
+ by substrate leakage or some semiconductor conductivity.
+ If the physical length of the transmission line is l < λ/4, the input impedance
+s from (1a) and (2a) are equal.
+ The same is valid for (1b) and (2b).
+ For simplicity we shall work from now on with Zinput short and Zinput open.
+ (3)
+\end_layout
+
+\begin_layout Standard
+After multiplying (2a) and (2b) and substituting Zinput short and Zinput
+ open, from equation (1) we get the following for the charac­teristic impedance
+ ZC, where Z0 is the system impedance 50 Ω: (4a) (4b) After some algebra
+ transformations by substitution of (1), (2) and (3) in (4) is obtained:
+ (4c) where X is hyperbolic tangency of the propagation constant γ multiplied
+ by the line length l: (4d) Effective dielectric constant is function of
+ the shape and electro-physical transmission line para­me­ters and β can
+ be extracted from the imaginary part (phase constant) of the full propa­gation
+ constant γ.
+ Fromwhere we manage the following expression for εeff: (5) where ω – angular
+ frequency, γ – propagation constant and c0 is light velocity.
+ Imaginary part of the propagation constant is the phase constant β.
+ From (4d) the propagation constant is: (6) where l is the physical length
+ of the transmission line, Zinput short is the input impedance obtained
+ from (1a) and Zinput open is the input impedance obtained from (1b).
+ After substituting (6) in (5) εeff is direcly derived.
+\end_layout
+
+\begin_layout Subsection
+Results from measurements and simulations
+\end_layout
+
+\begin_layout Standard
+Verification of the proposed method was done using elec­tro­magnetic simulations
+ and measured S-parameters of micro­strip transmission line with given length
+ on GaAs and SiGe sub­strates.
+ In this work a comparison of effective dielec­tric constant εeff and characteri
+stic impedances ZC was done using method of moments (MoM) for transmis­sion
+ lines with several lengths and widths on two types of semiconductor substrates.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 2.
+ Substrates used in elecotromagnetic simulator for extraction of S-parameters:
+ a) non-conductive sub.
+ - GaAs b) conductive sub.
+ - SiGe.
+\end_layout
+
+\begin_layout Standard
+Simulation parameters of the semiconductor substrates are given on Fig.
+ 2.
+ Main difference is the conductivity of both substrates.
+ In this work for the conducti­vity of the GaAs substrate is taken σ = 0.2
+ S/m.
+ Typical conductivity of SiGe substrates vary between 10 - 30 S/m and in
+ our simulations it is σ = 25 S/m.
+ On Fig.
+ 3., Fig.
+ 4 and Fig.
+ 5 are presented simulations of mic­ro­strip lines on non-conductive substrate
+ over freq­uency range 1 – 40 GHz and line widths: 5 μm, 10 μm, 15 μm, 30
+ μm, 60 μm.
+ For the same widths additional simulations were performed with lengths
+ of the MSL: 30 μm, 100 μm, 150 μm, 200 μm and 300 μm.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 3.
+ Effective dielectric constant εeff of MSL, non-conductive substrate (GaAs);
+ width = 5, 10, 15, 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 4.
+ Real part of ZC for MSL, non-conductive substrate (GaAs); width = 5, 10,
+ 15, 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 5.
+ Imaginary part of ZC for MSL, non-conductive substrate (GaAs); width =
+ 5, 10, 15, 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+Simulated results prove that the length of the TRL doesn't have significant
+ effect over εeff and ZC.
+ Effective dielectric constant varies from 6.5 to 4.7 with the change of the
+ width.
+ This means that if we increase the width of TRL the capacitive coupling
+ between the top metal layer and bottom ground increases too.
+ From electromagnetic point of view - more energy from the electromganetic
+ TEM wave will be enclosed within the substrate.
+ The same simulations have been performed for conduc­tive substrate as SiGe
+ shown on Fig.2b.
+ The results are depicted on Fig.6., Fig.7 and Fig.
+ 8.
+ The exact analysis of microstrip line build on con­duc­tive substrates
+ is given in [4], where the existence of three fundamental modes i.e.
+ “dielectric quasi-TEM mode”, “skin-effect mode” and “slow-wave mode” is
+ demons­trated, and the conditions for the appearance of each mode are clari­fie
+d by the resistivity (of the substrate) / frequency dependance: When the
+ product of the frequency and the resistivity of
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 6.
+ Effective dielectric constant εeff of MSL, conductive substrate (SiGe);
+ width = 5, 10, 15, 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 7.
+ Real part of ZC for MSL, conductive substrate (SiGe); width = 5, 10, 15,
+ 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 8.
+ Imaginary part of ZC for MSL, conductive substrate (SiGe); width = 5, 10,
+ 15, 30, 60 μm; length = 30, 100, 150, 300 μm.
+\end_layout
+
+\begin_layout Standard
+the Si-substrate is large enough to produce a small dielectric loss angle,
+ the substrate acts like a dielectric - TEM mode.
+ When the product of the frequency and the substrate conductivity is large
+ enough to yield a small depth of field penetration into silicon, the substrate
+ would behave like a lossy conductor wall, and the line may be treated as
+ a microstrip line on the imperfect “ground plane” (MIM) metal / dielectric
+ / metal structure.
+ When the frequency is not so high and the resistivity is moderate, the
+ substrate acts like none of the above cases, and slow-surface wave propagates
+ along the line.
+ Good agreement between theoretical and simulated results is observed on
+ Fig.
+ 6.
+ For lower frequencies and wider transmission lines the effective dielectric
+ constant looks like εeff of a capacitor with slightly con­duc­tive dielec­tric
+ between the plates.
+ In our case this is reasonable for “skin-effect mode” and the transmission
+ line acts like a microstrip line without “ground plane”.
+ For higher freq­uen­cies the pro­duct of dielectric loss-angle and substrate
+ is large enough and the substrate acts like isolating dielectric.
+ In this case εeff varies between 6 - 18 and real part of ZC from 40 – 110
+ Ω.
+ For both substrates the imaginary part of ZC is small and the simulated
+ impedances alter from -30 to 10 Ω in the frequency range.
+ Verification measurement using network analyzer and GaAs test struc­tures
+ was done.
+ On Fig.
+ 9 is given the layout of the test structures analysed by the proposed methodolo
+gy.
+ By means of VNA - HP 8510C Network Analyzer and probe station were measured
+ S-parameters of the transmission line with length 1129 μm.
+ The VNA calibration software makes analysis of the structure and extracts
+ the effective dielectric constant for the calibrated bandwidth in single
+ S1P file.
+ Using this file and the extracted parameters of the TRL with the VNA, we
+ made comparison between the VNA results and described methodology.
+ The graphics are pointed out on Fig.
+ 10.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 9.
+ Microstrip line on GaAs with length = 1129 μm and width = 40 μm.
+ Thru and reflect standards (open) for TRL calibration.
+\end_layout
+
+\begin_layout Standard
+Fig.10.
+ Measured and extracted εeff of microstrip TRL on GaAs substrate.
+\end_layout
+
+\begin_layout Standard
+Algorithm for extraction of microstrip TRL εeff: 1.
+ Measure the scattering parameters S11, S21, S12 and S22 of microstrip TRL
+ (Wx, Lx < λline/4); 2.
+ Place in ciruit simulator and find Sii open and Sii short ; 3.
+ Using (1a) and (1b) find Zinput short stub and Zinput open stub ; 4.
+ Using (4) find ZC of the TRL 5.
+ Measure the length of the TRL and find the propa­ga­tion constant γ using
+ (6); 6.
+ Substitute γ in (5) and extract the effective dielectric constant εeff
+ .
+ The algoritithm of the proposed extraction could be modified in the following
+ way.
+ Item 1 can be substituted with: one-port measurements of the “open” stub
+ by means of the set-up on Fig.
+ 12a or Fig.
+ 12c.
+ Here must be included one-port measurement of “short” stub by means of
+ the set-up on Fig.
+ 12d.
+ Thus the “artificial” obtaining of “short” stub through circuit simulator
+ from two-port measured S-parameters data of the transmission line (Wx,
+ Lx) is ommited.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 11.
+ Measurement setup with probe station and VNA.
+\end_layout
+
+\begin_layout Standard
+Using this algorithm and calibration structures it is possible to extract
+ εeff for simple transmission line with length Lx and width Wx.
+ On Fig.12a is shown simple microstrip TRL stub with length Lx and width
+ Wx.
+ One port measurement can give us information about the input impedances,
+ when the TRL is open.
+ For two port measure­ments using TRL stan­dards “thru” and “open”, like
+ those shown on Fig.12b and Fig.
+ 12C, provide us enough information for extraction.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 12.
+ Application of existing test structures for extraction of εeff of TRL.
+ a) One port measurement of the investigated open stub; b) Two port measurement
+ of the investigated stub as a trans.
+ line to transform into “short” stub by ideal short in schematic simulator;
+ c) De-embedding structure with 2 opren stubs for investigation; d) De-embedding
+ structure with 2 shorted stubs for investigation.
+\end_layout
+
+\begin_layout Section
+Ефективна диелектрична проницаемост на
+\begin_inset Newline newline
+\end_inset
+
+диференциална линия на границата диелектрик-полупроводник
+\end_layout
+
+\begin_layout Subsection
+Увод
+\end_layout
+
+\begin_layout Subsection
+Теоретична обосновка
+\end_layout
+
+\begin_layout Subsection
+Анализ на MIS вълноводна структура
+\end_layout
+
+\begin_layout Subsection
+Резултати
+\end_layout
+
+\begin_layout Subsection
+Заключение
+\end_layout
+
+\end_body
+\end_document

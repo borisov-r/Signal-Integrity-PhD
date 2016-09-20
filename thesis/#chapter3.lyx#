@@ -1,0 +1,614 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extreport
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language bulgarian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 2cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Методи и алгоритми за ЕМ симулация
+\end_layout
+
+\begin_layout Standard
+Електромагнитното моделиране, изчислителен електромагнетизъм или изчислителна
+ електродинамика включва процес на моделиране на взаимодействието на електромагн
+итното поле с физически обекти и в пространството.
+ То включва ефективно изчисляване с достатъчно голяма точност на уравненията
+ на Максуел и се използва за характеризиране на антени, електромагнитна
+ съвместимост, радарни системи и разпространение на електромагнитните вълни
+ в свободното пространство.
+ Специална част от изчислителния електромагнетизъм се занимава с електромагнитно
+то излъчване отразено и погълнато от малки частици.
+\end_layout
+
+\begin_layout Standard
+Много от реалните проблеми свързани с електромагнетизма като електромагнитно
+ отражение, електромагнитно излъчване, моделиране на вълноводи и др., не
+ са аналитично изчислими за множество геометрии, които се намират в реални
+ устройства.
+ Числените методи преодоляват невъзможността за намиране на решение използвайки
+ единствено уравненията на Максуел, при сложни взаимовръзки в многослойни
+ материали или гранични условия.
+ Това прави компютърното моделиране в електромагнетизма важно при дизайна
+ и моделирането на антени, радари, сателити и други комуникационни системи,
+ нанфотони устройства и високочестотна електроника върху силиций, медицинска
+ образна диагностика и др.
+ Изчислителните методи решават проблема свързан с електрическото поле 
+\emph on
+E
+\emph default
+, и магнитното поле 
+\emph on
+H
+\emph default
+ за определена област (например може да бъде изчислена диаграмата на излъчване
+ за произволно проектирана антенна структура).
+ Също може да бъде изчислен вектора на Пойнтинг, който показва посоката
+ на потока на мощността, нормалния мод на вълновод, дисперсия на електромагнитна
+ вълна, както и отраженията на 
+\emph on
+E
+\emph default
+ и 
+\emph on
+H
+\emph default
+ полетата.
+ При числените методи е възможно да се вземе в предвид, ако има равнина
+ на симетрия, като по този начин се опростяват реалните структури до идеализиран
+и цилиндри, сфери и други геометрии с правилна форма.
+ Много често при тях се използва симетрията и опростяване на изчисленията
+ от 3D измерно пространство до 2D и дори 1D.
+ 
+\end_layout
+
+\begin_layout Standard
+Формулирането на проблема използвайки числените методи позволява намирането
+ на нормалните режими на работа за конкретна структура.
+ По-точно моделиране на имплулсни сигнали и преходни процеси може да бъде
+ направено използвайки комютърно моделиране във времевата област, посредством
+ т.н.
+ FDTD (метод на крайните разлики в времевата област).
+ Заоблени геометрични обекти се изчисляват по-точно с метода на крайните
+ елементи 
+\emph on
+FEM
+\emph default
+ или използвайки неортогонална координатна мрежа.
+ Метода на лъчевото разпространение 
+\emph on
+BPM
+\emph default
+ решава проблеми свързани с потока на мощноста във вълноводи.
+ Методите за компютърно моделирани са специфични за различните приложения,
+ но понякога различните техники могат да изчислят едно и също разпределение
+ на полето или разпределението на мощността за разглежданата област.
+\end_layout
+
+\begin_layout Standard
+Един от подходите използвани при числените методи е дискретизиране на пространст
+вото в мрежа (ортогонална и ли не ортогонална), след което за всяка точка
+ от мрежата се решават уравненията на Максуел.
+ Процесът на дискретизация заема голяма част от компютърната памет, а самото
+ решаване на уравненията отнема значително време.
+ Компютърното решаване на електромагнитни проблеми, които включват голям
+ брой клетки в дискретизираната мрежа, често се сблъскват с физическите
+ ограничения за наличната памет и скоростта на работа на процесорите.
+ Често за сложни електромагнитни проблеми се използват т.н.
+ суперкомпютри [], клъстъри с голяма производителност [], векторни процесори
+ или използването на алгоритми, позволяващи паралелизъм.
+ Типично формулиране на проблема включва или итеративно изчисляване на уравнения
+та за целия обем във времето, като на всяка стъпка се преизчисляват клетките
+ в мрежата, умножение на матрици, когато се използват матрични методи, изчислява
+не на интеграли при използване метода на моментите (
+\emph on
+MoM
+\emph default
+) или бърза Фурие трансформация и итерации във времето при изчисляване използвай
+ки 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+split-step
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ [] метод или 
+\emph on
+BPM
+\emph default
+ [].
+ 
+\end_layout
+
+\begin_layout Standard
+Изпора на подходящ метод и правилна техника за изчисление е важна, защото
+ неправилното използване или неправилен избор на метод би довел до грешни
+ резултати или трудно изчислими резултати, в резултат на което времето за
+ изчисление би станало неразумно дълго.
+ Въпреки това името или техниката, често не ни дават информация за това,
+ как е имплементиран самия алгоритъм, особенно за комерсиалните продукти
+ 
+\end_layout
+
+\begin_layout Standard
+Choice of methods
+\end_layout
+
+\begin_layout Standard
+Choosing the right technique for solving a problem is important, as choosing
+ the wrong one can either result in incorrect results, or results which
+ take excessively long to compute.
+ However, the name of a technique does not always tell one how it is implemented
+, especially for commercial tools, which will often have more than one solver.
+\end_layout
+
+\begin_layout Standard
+Davidson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CEM_Davidson2010"
+
+\end_inset
+
+ gives two tables comparing the FEM, MoM and FDTD techniques in the way
+ they are normally implemented.
+ One table is for both open region (radiation and scattering problems) and
+ another table is for guided wave problems.
+\end_layout
+
+\begin_layout Section
+Метод на момента (MoM)
+\end_layout
+
+\begin_layout Standard
+Method of moments (MoM) or boundary element method (BEM)
+\end_layout
+
+\begin_layout Standard
+The method of moments (MoM)[2] or boundary element method (BEM) is a numerical
+ computational method of solving linear partial differential equations which
+ have been formulated as integral equations (i.e.
+ in boundary integral form).
+ It can be applied in many areas of engineering and science including fluid
+ mechanics, acoustics, electromagnetics, fracture mechanics, and plasticity.
+\end_layout
+
+\begin_layout Standard
+MoM has become more popular since the 1980s.
+ Because it requires calculating only boundary values, rather than values
+ throughout the space, it is significantly more efficient in terms of computatio
+nal resources for problems with a small surface/volume ratio.
+ Conceptually, it works by constructing a "mesh" over the modeled surface.
+ However, for many problems, BEM are significantly computationally less
+ efficient than volume-discretization methods (finite element method, finite
+ difference method, finite volume method).
+ Boundary element formulations typically give rise to fully populated matrices.
+ This means that the storage requirements and computational time will tend
+ to grow according to the square of the problem size.
+ By contrast, finite element matrices are typically banded (elements are
+ only locally connected) and the storage requirements for the system matrices
+ typically grow linearly with the problem size.
+ Compression techniques (e.g.
+ multipole expansions or adaptive cross approximation/hierarchical matrices)
+ can be used to ameliorate these problems, though at the cost of added complexit
+y and with a success-rate that depends heavily on the nature and geometry
+ of the problem.
+\end_layout
+
+\begin_layout Standard
+BEM is applicable to problems for which Green's functions can be calculated.
+ These usually involve fields in linear homogeneous media.
+ This places considerable restrictions on the range and generality of problems
+ suitable for boundary elements.
+ Nonlinearities can be included in the formulation, although they generally
+ introduce volume integrals which require the volume to be discretized before
+ solution, removing an oft-cited advantage of BEM.
+\end_layout
+
+\begin_layout Section
+Метод на крайните разлики във времева област (FDTD)
+\end_layout
+
+\begin_layout Standard
+Finite-difference time-domain (FDTD)
+\end_layout
+
+\begin_layout Standard
+Finite-difference time-domain (FDTD) is a popular CEM technique.
+ It is easy to understand.
+ It has an exceptionally simple implementation for a full wave solver.
+ It is at least an order of magnitude less work to implement a basic FDTD
+ solver than either an FEM or MoM solver.
+ FDTD is the only technique where one person can realistically implement
+ oneself in a reasonable time frame, but even then, this will be for a quite
+ specific problem.[1] Since it is a time-domain method, solutions can cover
+ a wide frequency range with a single simulation run, provided the time
+ step is small enough to satisfy the Nyquist–Shannon sampling theorem for
+ the desired highest frequency.
+\end_layout
+
+\begin_layout Standard
+FDTD belongs in the general class of grid-based differential time-domain
+ numerical modeling methods.
+ Maxwell's equations (in partial differential form) are modified to central-diff
+erence equations, discretized, and implemented in software.
+ The equations are solved in a cyclic manner: the electric field is solved
+ at a given instant in time, then the magnetic field is solved at the next
+ instant in time, and the process is repeated over and over again.
+\end_layout
+
+\begin_layout Standard
+The basic FDTD algorithm traces back to a seminal 1966 paper by Kane Yee
+ in IEEE Transactions on Antennas and Propagation.
+ Allen Taflove originated the descriptor "Finite-difference time-domain"
+ and its corresponding "FDTD" acronym in a 1980 paper in IEEE Transactions
+ on Electromagnetic Compatibility.
+ Since about 1990, FDTD techniques have emerged as the primary means to
+ model many scientific and engineering problems addressing electromagnetic
+ wave interactions with material structures.
+ An effective technique based on a time-domain finite-volume discretization
+ procedure was introduced by Mohammadian et al.
+ in 1991.[8] Current FDTD modeling applications range from near-DC (ultralow-freq
+uency geophysics involving the entire Earth-ionosphere waveguide) through
+ microwaves (radar signature technology, antennas, wireless communications
+ devices, digital interconnects, biomedical imaging/treatment) to visible
+ light (photonic crystals, nanoplasmonics, solitons, and biophotonics).
+ Approximately 30 commercial and university-developed software suites are
+ available.
+\end_layout
+
+\begin_layout Section
+Метод на крайните елементи (FEM)
+\end_layout
+
+\begin_layout Standard
+Finite element method (FEM)
+\end_layout
+
+\begin_layout Standard
+The finite element method (FEM) is used to find approximate solution of
+ partial differential equations (PDE) and integral equations.
+ The solution approach is based either on eliminating the time derivatives
+ completely (steady state problems), or rendering the PDE into an equivalent
+ ordinary differential equation, which is then solved using standard techniques
+ such as finite differences, etc.
+\end_layout
+
+\begin_layout Standard
+In solving partial differential equations, the primary challenge is to create
+ an equation which approximates the equation to be studied, but which is
+ numerically stable, meaning that errors in the input data and intermediate
+ calculations do not accumulate and destroy the meaning of the resulting
+ output.
+ There are many ways of doing this, with various advantages and disadvantages.
+ The Finite Element Method is a good choice for solving partial differential
+ equations over complex domains or when the desired precision varies over
+ the entire domain.
+\end_layout
+
+\begin_layout Section
+Разпространение на ЕМ вълни на границата
+\begin_inset Newline newline
+\end_inset
+
+метал-изолатор-полупроводник
+\end_layout
+
+\begin_layout Standard
+Симулация на ниво транзистор може да помага за изучаване разпространението
+ на електромагнитните вълни на границата метал-изолатор-полупроводник при
+ свързването на различни устройства.
+ За целта се дефинира набор от нелинейни уравнения, комбинирайки уравненията
+ за движение на заряди с уравненията на Максуел.
+ Наборът от нелинейни уравнения се трансформира в честотна област, което
+ води до получаване на набор от нелинейни уравнения за основната честота
+ и нейните хармоници.
+ В край на сметка нелинейните уравнения в честотна област се дискретизират
+ използвайки метода на крайните елементи 
+\emph on
+FEM
+\emph default
+ и се решават използвайки Нютонови итерации.
+ Възможно е имплементирането на числени подобрения, които да ускорят времето
+ за конвергенция и да помогнат за намирането на решение в среда с ограничен
+ обем, който е изследван.
+ Този метод дава възможност за изследване на взаимодействието между полето-заряд
+, загубите в полупроводниковата подложка и нелинейни ефекти, а също така
+ ефекти като забавени вълни (
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+slow waves
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+) и екраниране в следствие на зарядите.
+ Числения метод позволява точен анализ на нелинейните ефекти, които се появяват
+ в следствие на полупроводниковата подложка.
+ В този раздел са включени примери за материали и геометрии за илюстрация
+ на метода и възможностите му.
+\end_layout
+
+\begin_layout Standard
+Ефектите свързани с опроводяването и взаимната свързаност между устройствата
+ в интегралните схеми се явяват ограничаващ фактор за производителността
+ и цялостното представяне на схемите поради все по-голямата плътност и площ
+ на чиповете, които трябва да работят на все по-голяма тактова честота.
+ Все по-голяма част от закъсненията в днешно време се дължат на връзките
+ вътре в самия чип.
+ Ефектите от свързването между отделните устройства в чипа като загуби,
+ дисперсия и шум от подложката могат да намалят значително производителността
+ на схемите.
+ Един от най-простите компоненти е връзката метал-изолатор-полупроводник
+ (МИП) в съвременните интегрални схеми и точно поради тази причина е от
+ основно значение.
+ Разпространението на забавени вълни в МИП и Шотки контакт, за връзка между
+ активни устройства се наблюдава като ефект експериментално и е обяснен
+ теоретично от различни гледни точки 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1126104"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1126505"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1127658"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1477064"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1478081"
+
+\end_inset
+
+.
+ Свойствата на забавените вълни могат за връзките между отделните устройства
+ може да бъде приложено за намаляване размера и цената на елементи с разпределен
+и параметри при реализирането на закъснителни линии, променливи фазо-регулатори,
+ променливи филтри с управление по напрежение и др.
+ От друга гледна точка енергията погълната както от полупроводниковия слой,
+ така и от предавателната линия оказват значително влияние върху характеристикит
+е на свързващите линии.
+ Още повече, че нелинейната природа на полупроводниковата подложка много
+ често се пренебрегва в практиката.
+ Въпросът дали нелинейността на свързващите линии в чипа може да бъде пренебрегн
+ато за конкретен случай трябва да бъде адекватно оценен.
+ За да може да разберем и оценим механизма зад различни ефекти като шум
+ в подложката, полупроводникови нелинейности и загуби, загуби в проводниците,
+ забавени вълни или дисперсия, то е необходимо да можем да симулираме точно
+ свързващите структури на границата на метал-диелектрик-полупроводник.
+\end_layout
+
+\begin_layout Standard
+Аналитичен и емпиричен модел на схема със съсредоточени параметри се използва
+ за бързо изчисление и първоначално разбиране за характеристиките на МИП
+ връзките.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "4132028"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "721145"
+
+\end_inset
+
+ Приложението на тези модели е ограничено до няколко опростени конфигурации
+ само и дават недостатъчна информация за разпределената природа на МИП връзките.
+ Въпреки това, моделите със съсредоточени параметри могат включени в инициализац
+ията на по-мощни числени методи.
+\end_layout
+
+\begin_layout Standard
+По-точното характеризиране на МИП връзките изисква решаване на проблема
+ в областта на електромагнетизма.
+ Числени методи и схеми за електромагнитна симулация на МИП връзки включва
+ съгласуван по мод метод 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1131546"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1132691"
+
+\end_inset
+
+, анализ в областта на спектъра (SDA) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "41042"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "179875"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "234518"
+
+\end_inset
+
+, метод на линиите 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "85410"
+
+\end_inset
+
+, матрица на предавателните линии (TLM) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "554583"
+
+\end_inset
+
+, метод на крайните разлики в времева област (FDTD) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "55780"
+
+\end_inset
+
+, и метод на крайните елементи (FEM) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1131492"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1133567"
+
+\end_inset
+
+.
+ В тези чисто електромагнитни симулаторни модели, ефектите свързани с полупровод
+ника са включени просто като свойство с равномерно разпределена проводимост
+ или комплексна диелектрична константа в полупроводниковия материал.
+\end_layout
+
+\begin_layout Standard
+При разпространението на електромагнитната вълна в МИП връзките, ефект на
+ екраниране на зарядите в полупроводника спира електромагнитното поле да
+ навлезе дълбоко в него, който се явява като допълнение към ефекта на затихване,
+ породен от погълната енергия.
+ С цел описание поведението на полупроводника като плазма в твърдо състояние,
+ уравненията за движение на зарядите трябва да бъде включен в симулациите
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "18844"
+
+\end_inset
+
+.
+ Това налага комбиниране формулата за движение на зарядите и уравненията
+ на Максуел в симулатор на ниво транзистор, който да включва механизма на
+ взаимодействие между електромагнитното поле и свободните заряди в полупроводник
+а.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

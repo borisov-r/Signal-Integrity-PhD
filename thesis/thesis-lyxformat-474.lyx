@@ -1,0 +1,525 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extreport
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language bulgarian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Сигнална интегрираност на
+\begin_inset Newline newline
+\end_inset
+
+микровълнови планарни устройства върху
+\begin_inset Newline newline
+\end_inset
+
+сложни полупроводникови подложки
+\end_layout
+
+\begin_layout Author
+Радослав Бориславов Борисов
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3cm
+\end_inset
+
+Ръководител: доц.
+ д-р.
+ Валентин Видеков
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 5cm
+\end_inset
+
+Технически Университет - София
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+09 / 2015 г.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Абстракт
+\end_layout
+
+\begin_layout Standard
+Настоящата докторска работа представлява опит за анализ на съвременните
+ методи и начини за симулиране, измерване и верификация на сигналната интергиран
+ост в различни пасивни и активни устройства.
+ 
+\end_layout
+
+\begin_layout Standard
+Основните задачи поставени в заданието на докторската работа включват модифицира
+не и усъвършенстване на някои методи за електромагнитна симулация на елементи
+ и структури.
+ Част от задачите включват изследване на влиянието на корпуса, трасировката,
+ гъстотата на опроводяване и вида на монтажа (
+\emph on
+класически
+\emph default
+ или 
+\emph on
+flip-chip
+\emph default
+) върху параметрите на устройства от типа 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+System-on-chip
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ и 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+System-in-package
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Настоящата работа включва проектиране, изготвяне и верификация на различни
+ видове пасивни и активни устройства върху многослойни полупроводникови
+ подложки.
+ Самото окачествяване на проектираните устройства включва измервания използвайки
+ 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+контактни
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ и 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+безконтактни
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ измервания (векторите E и H в близката и далечната зона) с помощта на векторни
+ и скаларни измерители на вериги и специализиран електромагнитен скенер.
+\end_layout
+
+\begin_layout Chapter*
+Благодарности
+\end_layout
+
+\begin_layout Standard
+Тази работа не би била възможна без помощта на всички колеги в 
+\emph on
+RaySat
+\emph default
+, като специално бих искал да изкажа благодарностите си към Божидар Авджийски
+ и Александър Костов.
+ Те с голямото си търпение успяха да ми покажат сложната страна при проектиранет
+о и дизайна на микровълнови устройства както върху различни полупроводникови
+ подложки, така и върху специализирани високочестотни материали като Arlon
+ и Rogers.
+ Специална благодарност бих искал да изкажа също към моят колега и ръководител
+ доц.
+ д-р.
+ Радосвет Арнаудов, който за съжаление вече не е сред нас.
+ Той постави основите на настоящата работа и умело напътства работата ми
+ през годините.
+ 
+\end_layout
+
+\begin_layout Standard
+Никога няма да забравя предоставената ми възможност и прекрасните колеги,
+ които винаги са ми помагали да се справям с поставените задачи, когато
+ не всичко е вървяло по план.
+ Целият опит и знание за проектирането и окачествяване на микровълнови устройств
+а дължа на колегите си в 
+\emph on
+RaySat
+\emph default
+, както и отличните преподаватели, при които съм имал възможността да се
+ обучавам през годините в 
+\emph on
+Техническия Университет - София
+\emph default
+.
+ Специална благодарност бих искал да изкажа също към моят колега и преподавател
+ в 
+\emph on
+Софийски Университет
+\emph default
+ - доц.
+ д-р.
+ Пламен Данков, който винаги е помагал с практични съвети и идеи относно
+ измерванията и характеризирането на различни устройства, включени в настоящата
+ работа.
+\end_layout
+
+\begin_layout Standard
+Бих искал да изкажа и искрените си благодарности към моят настоящ ръководител
+ доц.
+ д-р.
+ Валентин Видеков, без чиято помощ едва ли бих завършил започната работа.
+\end_layout
+
+\begin_layout Standard
+Не на последно място бих искал да благодаря на моето семейство, за тяхната
+ искренна и безкористна подкрепа във всичко, с което съм се занимавал винаги.
+\end_layout
+
+\begin_layout Chapter*
+Използвани съкращения
+\end_layout
+
+\begin_layout Standard
+Най-често използваните съкращения в литературата на английски и в превод:
+\end_layout
+
+\begin_layout Standard
+SI - Signal Integrity - сигнална интегрираност
+\end_layout
+
+\begin_layout Standard
+MIM - metal-insulator-metal (метал, изолатор, метал) - висококачествен кондензат
+ор
+\end_layout
+
+\begin_layout Standard
+MOS - metal-oxide semiconductor
+\end_layout
+
+\begin_layout Standard
+SiGe - Silicon Germanium
+\end_layout
+
+\begin_layout Standard
+HBT - heterojunction bipolar transistor
+\end_layout
+
+\begin_layout Standard
+n-well - 
+\end_layout
+
+\begin_layout Standard
+AM - амплитудна модулация
+\end_layout
+
+\begin_layout Standard
+IF - intermediate frequency - междиночестотна
+\end_layout
+
+\begin_layout Standard
+PLL - фазово затворена верига
+\end_layout
+
+\begin_layout Standard
+FDTD - Finite-Difference Time-Domain method
+\end_layout
+
+\begin_layout Standard
+FEM - Finite Element Method
+\end_layout
+
+\begin_layout Standard
+BPM - Beam Propagation Method
+\end_layout
+
+\begin_layout Standard
+slow waves - забавени вълни
+\end_layout
+
+\begin_layout Standard
+МИП - метал-изолатор-полупроводник (MIS - metal-isulator-semiconductor)
+\end_layout
+
+\begin_layout Standard
+SDA - spectral-domain analysis (анализ в областта на спектъра)
+\end_layout
+
+\begin_layout Standard
+TLM - transmission line method (метод на предавателните линии)
+\end_layout
+
+\begin_layout Standard
+S-parameters - параметри при слаб входен сигнал
+\end_layout
+
+\begin_layout Standard
+CAD - Система за компютърно проектиране (computer-aided design)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter0.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter4.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter5.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter6.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "appendix.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "bibliography.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

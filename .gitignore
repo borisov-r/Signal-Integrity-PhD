@@ -40,3 +40,8 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# PhD Thesis
+*.lyx~
+'*
+references
