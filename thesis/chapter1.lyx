@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extreport
 \use_default_options false
 \begin_modules
@@ -14,16 +16,16 @@ figs-within-sections
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -114,137 +116,1559 @@ figs-within-sections
  на 19 век, когато при прекарването на първия трансатлантически кабел, мениджъри
 те и инженерите са нямали основни познания за разбирането и управлението
  на техническия проект, което води до сериозни технически грешки.
-  
+ Първият път, когато това става очевидно е свързан с проект за високоскоростна
+ връзка, който е реализиран на 16 август 1858 г.
+ Тогава Великобританската кралица Виктория изпраща поздравително съобщение
+ на американския президент Буханан посредством първият успешно поставен
+ трансатлантически телеграфен кабел 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_ref01"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_ref02"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_ref03"
+
+\end_inset
+
+.
+ Кабелът с дължина 3800 км, свързващ Ирландия с Нюфаундленд, не може да
+ бъде финансово изгоден ако не работи със скорост близка до тази на телеграфните
+ кабели работещи на сушата.
+ За съжаление проблеми свързани със сигналната интегрираност водят до това,
+ съобщението на кралицата, състоящо се от 99 думи да отнеме почти 17 часа
+ за предаването му, вместо няколко минути както се очаквало 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_ref01"
+
+\end_inset
+
+.
+ Причините за това бедствие през 19 век се дължат както на мениджърски,
+ така и на технически грешки.
+ Основната грешка на инвеститорите и мениджърите, е че не са имали необходимите
+ познания и разбирания за основите на телеграфа.
+ Поради тази причина, те наемат главен електротехник, който няма основни
+ познания в областта на електро инженерството или теорията на телеграфията.
+ Това решение е в основата на техническите недостатъците на поставения трансатла
+нтически кабел.
+ Без необходимите познания главния електротехник не е могъл да разбере последнит
+е технически разработки и вместо това разчита основно на своята интуиция
+ при проектирането на кабела и инструментариума към него.
+ Този интуитивен дизайн е бил привлекателен за мениджърите, но не е бил
+ подходящ за конкретното приложение.
+ Някои външни експерти (като Проф.
+ Уилям Томсън, по-късно познат като Лорд Келвин) се усъмнили в дизайна на
+ електрическия кабел и електрическото оборудване към него.
+ С неговите теоретични познания, Томсън знаел, че електрическите характеристики
+ на дълъг кабел поставен под вода са значително различни, от тези на кабел
+ поставен на открито (във въздух), използван при експериментите за доказване
+ на концепцията.
+ Той правилно предвидил, че поставен под вода, този дълъг кабел ще изкриви
+ импулсите на високо честотния морзов код.
+ Друг дизайн на кабела, както и на приемо-предавателните устройства с различни
+ електрически характеристики бил предложен от него.
+ Поради ограничените технически познания на мениджърите, те не са били в
+ състояние да поискат тестове и да зададат конкретни въпроси, необходими
+ за разрешаване на дебата между Томсън и главния електротехник.
+ След няколко неуспешни старта, интуитивно проектираният, но с електрически
+ недостатъци кабел най-накрая е бил поставен.
+ Накрая инструментите за измерване в Нюфаундленд измерват постоянен ток
+ (DC) генериран от батерия в Ирландия и по този начин този нискочестотен
+ тест утвърждава дизайна на кабела.
+ Не след дълго се установява, че високочестотните импулси не могат да бъдат
+ правилно приети.
+ Всъщност сигналите могли да бъдат приети само със скорости значително по-бавни,
+ което прави цялата инвестиция невъзвращаема.
+ Мениджмънта не е бил в състояние правилно да оцени различните подходи за
+ откриване на грешката предложена от персонала.
+ Вместо да използват чувствителна приемо-предавателна техника предложена
+ от Томсън (както вече знаем, че би подобрило значително скоростта на предаване)
+, те оторизират електротехника да увеличи напрежението на импулсите предавани
+ по линията.
+ Погрешно насочени, те смятат, че по-високото напрежение, ще 
+\begin_inset Quotes gld
+\end_inset
+
+тласне
+\begin_inset Quotes grd
+\end_inset
+
+ импулсите по кабела с по-голяма сила, позволявайки комуникация с по-голяма
+ скорост.
+ Всъщност, това не подобрява скоростта на предаване, защото основния проблем
+ е изкривяването на импулсите, причинено от по-голямото времезакъснение
+ (RC константа), а не силата на сигнала.
+ По-голямото RC закъснение е било критично при проектирането на кабел за
+ поставяне под вода, докато при експеримента за поставяне на доказване на
+ концепцията, тестовете са били направени на сушата с кабел с различна време
+ константа.
+ Кабелите за поставяне на суша използват въздуха като изулатор, но подводните
+ кабели използват водонепромукаема изулация, която значително увеличава
+ капацитета.
+ По-голямата времеконстанта изкривява импулсите, като по този начин само
+ най-бавните от тях могат да бъдат правилно приети.
+ Съвременните инженери, занимаващи се със сигнална интегрираност биха казали,
+ че интерсимволната интерференция се създава от кабела, затихвайки високочестотн
+ите (създадени от високо скоростните импулси на морзовия код) и позволявайки
+ само нискочестотните (бавни импулси) да преминат.
+ Същото поведение се наблюдава когато предаваме сигнали в модерните електронни
+ схеми, използвайки печатни платки например.
+ По време на процеса на тестване за откриване на причините за бавното предаване
+ на сигналите, инженерите постепенно увеличавали напрежението, с цел подобряване
+ скоростта на предаване, докато не развалили кабела един месец след като
+ кралицата изпратила първото си съобщение.
+ Кабелът така и не изпратил нито една комерсиална телеграма и е бил финансова
+ грешка, която поставя началото на разследване за финансова измама и грешки
+ при мениджмънта на техническия проект, което унищожава кариерите на няколко
+ човека.
+ 
 \end_layout
 
 \begin_layout Standard
-The First Transatlantic Telegraph Cable Managers and engineers not having
- a fundamental understanding of the technical principles governing a project
- are more likely to make serious technical mistakes, especially when pushing
- the state of the art.
- Perhaps the first time this became ap- parent with regards to a significant
- high-speed signaling project occurred on August 16, 1858.
- That was when Great Britain’s Queen Victoria sent a welcoming message to
- U.S.
- President Buchanan over the first successfully laid transatlantic telegraph
- cable [2–4].
- This 3,800-km (about 2,400-mile) length of submarine cable connected 
+Съвременните инженери и тези, които управляват такива проекти могат да избегнат
+ подобни систематични проблеми, като този от проекта през 1858 г.
+ при поставянето на транатлантическия кабел, като се запознаят с начините
+ на разпространение на импулси в дълги линии и да научат техниките за оправяне
+ на тези грешки.
 \end_layout
 
 \begin_layout Standard
-12 Introduction to Signal Integrity Ireland with Newfoundland and could
- not be financially viable unless it operated at speeds similar to dry land
- telegraph cables.
- Unfortunately, signal integrity problems caused the Queen’s 99-word inaugural
- message to take nearly 17 hours for trans- mission instead of several minutes
- as had been expected [2].
- The roots of this nineteenth-century disaster are both managerial and technical.
- The underlying management fault was that the investors and managers did
- not possess a rudimentary understanding of telegraphy.
- Because of this they hired a chief electri- cian lacking a thorough background
- in electrical engineering or telegraphy theory.
- This decision was at the root of the cable’s technical flaws.
- Without this knowledge the chief electrician was unable to understand the
- latest technical developments and instead relied on his intuition to design
- the cable and instrument set.
- These intuitive designs were appealing to management but inappropriate
- for the task.
- Some outside experts (most notably Professor William Thompson, later to
- be Lord Kelvin) had questioned the cable’s electrical design and the electrical
- equip- ment to be used with it.
- With his theoretical background, Thompson knew that the electrical characterist
-ics of a long submarine cable were significantly different from the open
- air cable that had earlier been used in proof-of-concept experiments, and
- he correctly believed that the submarine cable would distort high-speed
- Morse code pulses.
- He preferred another cable design and suggested transmitting and re- ceiving
- equipment with very different electrical characteristics than the equipment
- designed by the chief electrician.
- Because of management’s weak technical back- ground, they were unable to
- ask the kinds of probing, focused questions needed to resolve the technical
- debate between Thompson and the chief electrician.
- After several false starts, the intuitively designed but electrically flawed
- cable was finally laid, and direct current from a battery in Ireland was
- detected by instru- ments in Newfoundland.
- This low-frequency test seemed to vindicate the design, but it was soon
- discovered that high-speed pulses could not be properly received.
- In fact, signaling was only possible at speeds that were far too slow to
- be profitable.
- Management was unable to properly judge the merits of the various approach-
- es to debug suggested by staff.
- Instead of using the sensitive transmitting and re- ceiving instruments
- purposed by Thompson (which we now know would have significantly improved
- the signaling speed), they authorized the chief electrician to increase
- the voltage of the transmitted pulses.
- The misguided idea was that the higher voltage would “push” the pulses
- down the cable with greater force, allow- ing signaling to occur at high
- speeds.
- In fact, this did not improve the signaling rate because the fundamental
- problem was pulse distortion caused by the cable’s large RC delay, not
- signal strength.
- The large RC delay was the critical difference between the dry-land cables
- used during the proof-of-concept experiments and the submarine cable.
- The dry-air cables used air as insulation, but the submarine cable used
- a waterproof insulation that greatly increased the capacitance.
- We will return to this effect in Section 1.7.
- The large RC delay so distorted the pulses that only the slowest of them
- could be properly received.
- Modern SI engineers would say that intersymbol interference was created
- by the way in which the cable attenuated high frequencies (the high- speed
- Morse pulses) but allowed low frequencies (slow speed pulses, including1.3
- What Is a Pulse? 3 the battery’s DC) to pass.
- As we will see in later chapters, this same behavior also occurs when signaling
- over modern circuit board traces.
- During debug the sending voltage was incrementally increased to excessively
- high values in an unfortunate attempt to improve signaling speed.
- This destroyed the cable within a month of the Queen’s inaugural message.
- In fact, the cable never sent any commercial telegrams and was a financial
- failure that set off investigations of financial fraud and technical mismanagem
-ent and ruined several careers.
- Modern SI engineers and those who manage them can avoid the kinds of sys-
- temic problems experienced during the 1858 cable project by learning the
- ways in which pulses misbehave when traveling along long lines and learning
- techniques for correcting these types of errors.
- We begin by defining a pulse, then examine the time and frequency domains,
- and describe two of the most important physical constants used in signal
- integrity work.
- We conclude by briefly discussing the effects that many drivers simultane-
- ously switching have on power supply noise.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_1.svg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_1"
+
+\end_inset
+
+Импулс с ширина 
+\begin_inset Formula $W$
+\end_inset
+
+, период 
+\begin_inset Formula $Т$
+\end_inset
+
+ и време на нарастване 
+\begin_inset Formula $t_{r}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_1"
+
+\end_inset
+
+ описва един импулсен сигнал във времева област, който включва ширината
+ на импулса 
+\begin_inset Formula $W$
+\end_inset
+
+, периода на повторение 
+\begin_inset Formula $T$
+\end_inset
+
+ и времето за нарастване 
+\begin_inset Formula $t_{r}$
+\end_inset
+
+.
+ Ширината на импулса W (обикновенно в nsec или psec) се измерва между две
+ точки където сигналът пресича половината от амплитудата (т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+50%
+\begin_inset Quotes grd
+\end_inset
+
+), докато периода Т се измерва в основата на импулса както е показано на
+ фигурата.
+ Времето за нарастване 
+\begin_inset Formula $t_{r}$
+\end_inset
+
+ се дефинира като времето необходимо за импулса да нарастне от 10% от стабилното
+ си състояние до стойност 90%.
+ Времето на задния фронт се дефинира по стщия начин както времето за нарастване,
+ но се отчита спада на амплитудата на сигнала от 90% до 10%.
+ Предния и на задния фронт могат да бъдат измерени по много начини, но всеобщо
+ приетия начин за измерване е т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+10/90
+\begin_inset Quotes grd
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_04"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В някои случаи предния или задния фронт на импулсите може да надвиши нормалното
+ стабилно състояние и да започне осцилация около тази стойност.
+ Обикновенно това е нежелан ефект който се нарича 
+\begin_inset Quotes gld
+\end_inset
+
+ringing
+\begin_inset Quotes grd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
-Transmission Line Fundamentals
+Времева и честотна области
 \end_layout
 
 \begin_layout Standard
-As illustrated in Figure 6.1, a transmission line is formed with two or more
- con- ductors.
- The signal conductor carries the signal energy from a generator to a load,
- and the second conductor (the return) completes the circuit by returning
- the signal current back to the generator.
- The signal conductor could be a microstrip trace and the return path the
- underlying ground plane.
- The generator is any signal launching device, such as an ASIC I/O driver.
+Импулси описани използвайки време за описание на сигнала се наричат сигнали
+ във времева област.
+ Осцилоскопите са най-често използваните инструменти работещи във времева
+ област, както също SPICE схемните симулатори показват резултатите от симулациит
+е в също във времева област по подразбиране.
+\end_layout
+
+\begin_layout Standard
+Най-често сигналната интегрираност изследва сигналите във времева област,
+ но е важно да се разбира начинът, по който електрическите характеристики
+ на печатните платки или интегралните схеми се променят за различните честоти.
+ Този подход в честотната област е особенно подходящ когато изучаваме как
+ загубите в предавателните линии оказват влияние върху формата (изкривяванията)
+ и разпределението на импулсите (интерсимволна интерференция).
+\end_layout
+
+\begin_layout Section
+Основни принципи в предавателните линии
+\end_layout
+
+\begin_layout Standard
+Съществуват два начина за разглеждане на основните концепции в предавателните
+ линии - схемен и електромагнитен анализ.
+ В настоящата глава се разглежда схемния анализ, а в последващите глави
+ от работата и електромагнитния анализ.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_06"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_07"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Както е показано на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_2"
+
+\end_inset
+
+, предавателна линия се формира от два или повече проводника.
+ Сигналния проводник пренася енергията от сигнал генератора до товара, а
+ втория проводник затваря схемата, като връща обратно тока в генератора.
+ Сигналния проводник може да бъде микролентова линия, а обратния път на
+ тока, да бъде равнината под нея, която се явява 
+\begin_inset Quotes gld
+\end_inset
+
+земя
+\begin_inset Quotes grd
+\end_inset
+
+ (
+\begin_inset Quotes gld
+\end_inset
+
+ground plane
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Сигнал генератора може да бъде всяко активно устройство като например входно/из
+ходния драйвер на специализирана интегрална схема например.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement b
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_2.svg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_2"
+
+\end_inset
+
+Предавателна линия включваща сигнал генератор, товар и обратен път на сигнала.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-What Is the Signal Return Path?
+Обратен път на сигнала
 \end_layout
 
 \begin_layout Standard
-Frequently, signal integrity engineers speak of the “signal return path,”
- but often it is taken for granted and not fully understood.
- Studying the return path is impor- tant because it determines the trace’s
- capacitance, inductance, resistance, and noise coupling.
- Because capacitance is often more intuitive than inductance, we will ignore
- inductance for now and focus on the importance of the return path in determin-
- ing the capacitance.
- Resistance is also affected by the return path, but we will wait until
- Chapters 7 and 8 to discuss this important topic.
+Често инженерите, занимаващи се със сигнална интегрираност говорят за 
+\begin_inset Quotes gld
+\end_inset
+
+обратен път на сигнала
+\begin_inset Quotes grd
+\end_inset
+
+, но често това понятие се взема за даденост и много често не е разбрано
+ напълно.
+ Изследването на обратния път на сигнала е важно, защото той определя капацитета
+, индуктивността, съпротивлението и шума от външни източници на предавателната
+ линия.
+ Капацитета на предавателна линия може да бъде дефиниран по интуитивно,
+ за разлика от нейната индуктивност.
+ Съпротивлението в линията също се влияе от обратния път на сигнала и трябва
+ да бъде взето под внимание, докато в много случаи индуктивността може да
+ бъде пренебрегната.
+\end_layout
+
+\begin_layout Standard
+Надлъжния разрез на предавателна линия поставена върху метална равнина свързана
+ към обща земя е показана на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_3"
+
+\end_inset
+
+.
+ От схемата се вижда, че предавателната линия се явява част от кондензатор,
+ чийто втори полюс е втората равнина или по-точно обратния път на сигнала
+ (като общата равнина, която е свързана към 
+\begin_inset Quotes gld
+\end_inset
+
+земя
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Разпределената индуктивност се формира от затворения контур на тока в областта
+ между проводника на предавателната линия и общата маса.
+ Стойностите на капацитета и индуктивността в предавателната линия се определят
+ от ширината на линията и разстоянието ѝ до общата земя, свързана към масата
+ на сигналния генератор.
+\end_layout
+
+\begin_layout Standard
+Така дефинирани капацитета и индуктивността определят импеданса на линията
+ и поради тази причина стойността на импеданса на линията има смисъл само,
+ ако е дефиниран спрямо конкретно определена равнина за обратния път на
+ сигнала.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_3.svg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_3"
+
+\end_inset
+
+Разпределени кондензатори с паралелни плочи и индуктивност формирана между
+ сигналната линия и обратния път на сигнала.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Схемния модел на предавателната за малък сегмент от нея е показан на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_4"
+
+\end_inset
+
+.
+ Проводника има съпротивление R и индуктивност L, а капацитета формиран
+ между проводника и земята се модлира с кондензатора C, като загубите в
+ него се задават с проводимостта G.
+ Цялата предавателна линия се състои от безкрайно голям брой идентични копия
+ на показания малък сегмент от линията.
+ Всъщност тези сегменти са толкова малки, че ако погледнем предавателната
+ линия, тя изглежда плавно и съпротивленията, индуктивностите и кондензаторите
+ са разпределени равномерно по цялата дължина.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_4.svg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_4"
+
+\end_inset
+
+Схемен модел на предавателна линия.
+ Разпределените схемни елементи са представени като елементи със съсредоточени
+ параметри, разположени на много близко разстояние един от друг.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Схемата от Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_4"
+
+\end_inset
+
+ представлява нискочестотен филтър с константа - k и схемната теория може
+ да бъде използвана за анализ.
+ Използвайки този подход, можем да развием схемно базирано разбиране за
+ поведението на предавателната линия.
+ В случая схемата има следните характеристики:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Натрупва закъснение
+\emph default
+.
+ Времето необходимо на сигнала да премине от единия край на предавателната
+ линия до другия.
+ Това се нарича закъснение на предавателната линия или tpd (transmission
+ line propagation delay).
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Има импеданс
+\emph default
+.
+ Тока възбуден в такава предавателна линия е ограничен от характеристичния
+ импеданс на предавателната линия, 
+\begin_inset Formula $Z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Има загуби
+\emph default
+.
+ Сигнала затихва, а ако загубите са огромни, то сигнала ще бъде още изкривен.
+\end_layout
+
+\begin_layout Standard
+Използвайки схемен анализ, игнорирайки съпротивлението и проводимостта (R
+ и G) можем да намерим характеристичния импеданс и закъснението на дълга
+ верига RLCG схема като показаната на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_4"
+
+\end_inset
+
+ както следва: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_09"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_10"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{0}=\sqrt{\frac{L}{C}}\label{eq:2_2_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+tpd=\sqrt{LC}\label{eq:2_2_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Импеданса 
+\begin_inset Formula $Z_{0}$
+\end_inset
+
+ се измерва в единици Ом (
+\begin_inset Formula $\Omega$
+\end_inset
+
+) и има тази стойност за цялата дължина на линията.
+ Например, предавателна линия имаща характеристичен импеданс 75
+\begin_inset Formula $\Omega$
+\end_inset
+
+ не означава, че импеданса е 75
+\begin_inset Formula $\Omega$
+\end_inset
+
+ на метър.
+ Това е разликата със съпротивлението, където дължината на предавателната
+ линия има значение.
+ Например, предавателна линия може да има 0.1 
+\begin_inset Formula $\Omega/\text{inch}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Закъснението 
+\emph on
+tpd
+\emph default
+ се мери в единици време (обикновенно пико секунди или нано секунди) за
+ единица дължина.
+ Например линия с дължина 10 inch, имаща закъснение 180 ps/inch ще има 1.8
+ ns закъснение на сигнала за цялата дължина.
+\end_layout
+
+\begin_layout Standard
+Уравненията 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2_1"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2_2"
+
+\end_inset
+
+ са валидни само при условие, че съпротивлението R е малко в сравнение с
+ ефектите свързани с индуктивността L, а загубите в капацитета G са значително
+ по-малки от ефектите свързани с кондензатора C.
+ Всъщност тези две уравнения изчисляват характеристичния импеданс без загуби
+ и време закъснението без загуби в предавателната линия, защото загубите
+ в проводника се представят с R, а загубите в кондензатора, представени
+ с G се предполага, че са достатъчно малки, че да отпаднат от основното
+ уравнение за импеданса и закъснението.
+ Това е добра апроксимация при условие, че се разглежда предавателна линия
+ върху печатна платка, а сигналите които се разпространяват имат време за
+ нарастване от порядъка на 10 ns или по-бързи.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_12"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поради факта, че разглеждаме резултатите от схемната теория, вместо от теорията
+ за елелктромагнитното поле, не се вижда, че всъщност енергията се разпространяв
+а като вълна по дължината на предавателните линии.
+ На Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_5"
+
+\end_inset
+
+ е представено съпротивлението, индуктивността и капацитета на микролентова
+ линия, в която не са включени загубите в кондензаторите (елемента G от
+ Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_4"
+
+\end_inset
+
+ не е включен).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_5.svg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_5"
+
+\end_inset
+
+Подаването на напрежение на предавателната линия, кара индуктивностите и
+ кондензаторите да се зареждат по начин близък до този при разпространение
+ на вълна.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В началото ще предположим, че ключа S е изключен и ток не преминава през
+ схемата, както и че всички кондензатори не са заредени, а предавателната
+ линия е с безкрайна дължина, така че в нея не се наблюдават отражения на
+ сигнала.
+\end_layout
+
+\begin_layout Standard
+Затварянето на ключа S води до протичането на ток през L1 и R1, зареждайки
+ капацитета C1.
+ Всъщност индуктивностите и съпротивленията спират кондензаторите да бъдат
+ зареждани мигновенно.
+ Има времезакъснение, което е равно на 
+\emph on
+tpd
+\emph default
+ между затварянето на ключа и зареждането на кондензатора C1.
+ След преминаване на закъснението, C1 е напълно зареден и тока може да премине
+ през L2 и R2, за да зареди C2.
+ След закъснение от 
+\emph on
+tpd
+\emph default
+ секунди, C2 е напълно зареден и тогава C3 започва да се зарежда.
+ Този процес е последователен и продължава докато всички кондензатори по
+ дължината на линията не бъдат заредени.
+ Измервайки напрежението върхи всеки кондензатор, то изглежда като разпространен
+ие на вълна по напрежение от ляво на дясно на фигурата, а ако измерваме
+ тока през индуктивностите, то той изглежда като разпространение на вълна
+ по ток заедно с вълната по напрежение по цялата дължина.
+\end_layout
+
+\begin_layout Standard
+Това описание на поведението на предавателната линия е опростено.
+ Вместо това можем да кажем, че ток започва да протича през L2 докато C1
+ все още се зарежда и C2 може да започне да зарежда C3 преди C2 да е напълно
+ зареден и т.н.
+ Това означава, че вълната плавно се разпространява по линията вместо това
+ да се случва на стъпки, както е показано на фигурата.
+ Въпреки това, ако разглежданите сегменти са избрани, така че да са с достатъчно
+ малка стъпка, то за наблюдател, вълната ще изглежда, че се разпространява
+ плавно по дължината на линията.
+\end_layout
+
+\begin_layout Standard
+Ако приемем, че предавателната линия има малки загуби (което означава, че
+ R и G от Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_4"
+
+\end_inset
+
+ могат да бъдат игнорирани), то характеристичния импеданс на предавателната
+ линия, ще бъде просто съпротивление.
+ Вълните по напрежение и по ток на входа на безкрайно дълга предавателна
+ линия следват закона на Ом и отношението им ще бъде равно на 
+\begin_inset Formula $Z_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{0}=\frac{V_{i}}{I_{i}}\label{eq:2_2_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+където началното напрежение е 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+, което отговаря на падащото напрежение и началниято ток е 
+\begin_inset Formula $I_{i}$
+\end_inset
+
+, който отговаря на падащия ток в линията.
+ Това уравнение не може да бъде използвано, когато импеданса в линията се
+ променя по дължината ѝ или в края, което би довело до поява на отразени
+ вълни.
+ Отраженията са вълни, които се разпространяват по линията независимо от
+ възбудената вълна и те могат да се комбинират по сложен начин.
+ Но за линия без отражения, се вижда, че характеристичния импеданс определя
+ връзката между напрежението и тока по дължината на линията.
+\end_layout
+
+\begin_layout Standard
+Защото импеданса на предавателна линия без загуби има поведението на просто
+ съпротивление, то принципа за простия делител на напрежение може да бъде
+ използван за намиране на стартиращото напрежение, при условие, че знаем
+ захранващото напрежение 
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+.
+ Принципа е показан на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_6"
+
+\end_inset
+
+, където импеданса на драйвера (например драйвер на специализирана ИС) е
+ 
+\begin_inset Formula $Z_{g}$
+\end_inset
+
+, а характеристичния импеданс на предавателната линия е 
+\begin_inset Formula $Z_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{i}=V_{CC}\frac{Z_{0}}{Z_{0}+Z_{g}}\label{eq:2_2_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_6.svg
+	scale 90
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_6"
+
+\end_inset
+
+Делител на напрежение между генератора и импеданса на предавателната лния
+ определя началното напрежение 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+.
+ Предавателната линия е достатъчно дълга, че товара не оказва влияние.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Този модел показва как захранващото напрежение, импеданса на линията и входно/из
+ходния импеданс на драйвера взаимодействат:
+\end_layout
+
+\begin_layout Itemize
+При зададен импеданс на драйвера и стойност за 
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+, то стартиращото напрежение ще бъде по-високо, ако хакратеристичния импеданс
+ на линията се увеличи.
+ Това може да бъде използвано за подобряване на границата за допустим приет
+ шум, чрез увеличаване на напрежението в приемника, но трябва да се внимава
+ за да не се получат прекалено големи отражения.
+\end_layout
+
+\begin_layout Itemize
+Реалната стойност на 
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+ e важна и определя стартиращото напрежение.
+ Спадането на 
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+ причинено от едновременното превключване на множество драйвери (едновременен
+ шум на превключване) води до намаляване на стартиращите напрежения, което
+ от своя страна води до намаляване на границата за допустим приет шум.
+ Понеже спада зависи от броя на линиите превключващи едновременно, то намаляване
+то на границата за допустим шум, ще зависи от данните и скоростта на предаване.
+\end_layout
+
+\begin_layout Itemize
+Стартовото напрежение, ще бъде по-голямо, когато се използват изходни драйвери
+ с ниско изходно съпротивление.
+ Това може първоначално да доведе до увеличаване на приетото напрежение,
+ но трябва да се внимава, защото прекалено ниското съпротивление, ще доведе
+ до недопустимо големи отражения от предавателната линия.
+\end_layout
+
+\begin_layout Standard
+Тока протича през сигналния проводник на предавателната линия, но обратния
+ път по, който тока протича за да се затвори контура също е важен.
+ Повечето пъти смятаме, че сигнала трябва да достигне товара преди обратния
+ ток да започне да протича в обратна посока, но всъщност тока започва да
+ протича по обратния път в момента в който подадем сигнал на предавателната
+ линия.
+\end_layout
+
+\begin_layout Standard
+На Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_7"
+
+\end_inset
+
+ е показан токов импулс разпространяващ се в микролентова линия по продължение
+ на линията.
+ Токовият импулс достига първия кондензатор, като по този начин го зарежда.
+ За да се затвори веригата, в кондензатора протича ток (т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+ток на отместване
+\begin_inset Quotes grd
+\end_inset
+
+), който е свързан с движението на зарядите и той протича в обратна посока
+ - към източника на сигнал.
+ Това се случва в мигновенно, още преди сигнала да е достигнал до товара.
+ Ток на отместване протича също при достигане на сигнала до втория кондензатор
+ и процеса продължава докато сигнала се разпространява по линията.
+ Ако наблюдаваме обратния път на тока, ще видим, че той протича при достигането
+ на всеки един от кондензаторите по линията и тяхното зареждане.
+ Разстоянието между отделните кондензатори е изключително малко, затова
+ в обратния път на сигнала се наблюдава непрекъснат поток от заряди.
+ Както е показано на фигурата, обратния тока се движи с постоянна 
+\begin_inset Quotes gld
+\end_inset
+
+стъпка
+\begin_inset Quotes grd
+\end_inset
+
+ заедно със сигналния ток, но понеже движението му е в обратна посока, той
+ изглежда като огледален образ на сигналния ток.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_7.svg
+	scale 90
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_7"
+
+\end_inset
+
+Тока 
+\emph on
+i
+\emph default
+ съвпада по стойност в права и обратна посока.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В примера обратния път представлява една цяла равнина, свързана към електричска
+ маса, но обратния път, може също да бъде свързан към електрическа земя.
+ Анализа на втория случай, когато равнината е свързана към земя е подобен
+ на този при лентова линия, когато един от двата обратни пътя е свързан
+ към електрическа земя, а другият към равнина, с постоянно пражение V.
+ Електрическата маса (равнината) може да бъде свързана към същата равнина,
+ която захранва и входно/изходния драйвер или да бъде независимо захранване,
+ което осигурява основните функции на специализирана интегрална схема или
+ други логически елементи върху печатна платка.
+ Вижда се, че обратните пътища са много различни при отделните случаи.
+\end_layout
+
+\begin_layout Standard
+Опростен пример за специализирана интегрална схема, която е свързана към
+ лентова линия с характеристичен импеданс 50
+\begin_inset Formula $\Omega$
+\end_inset
+
+ и осигурява логическите нива за предаване на сигнал по линията е даден
+ на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_8"
+
+\end_inset
+
+.
+ Лентовата линия е идеално центрирана спрямо равнината свързана към земя
+ и захранващата равнина, която е свързана към входно/изходния драйвер на
+ ИС.
+ Това прави капацитетите (и индуктивностите, които не са показани на фигурата)
+ от сигналната линия до земята идентични с капацитетите (и индуктивностите)
+ до захранващата равнина.
+ В практиката тази конфигурация се среща рядко, като например отместването
+ на лентовата линия е по-близко до едната от равнините, което води до по-голяма
+ връзка на сигнала към тази равнина и съответно по-слаба връзка към другата
+ равнина.
+ Обясненията свързани с този случай са напълно идентични, но за опростяване
+ най-добре би било ако приемем, че капацитетите и индуктивностите за всяка
+ равнина са еднакви.
+\end_layout
+
+\begin_layout Standard
+Предполагаме, че изхода на драйвера е бил 0 V дълго време, достатъчно да
+ се разредят всички кондензатори между предавателната линия и равнината
+ свързана към земя.
+ Всички кондензатори формирани между равнината на захранването и предавателната
+ линия са напълно заредени, защото линията е свързана към 0 V напрежение.
+ От фигурата се вижда, че ако драйвера превключи състоянието си в логическа
+ единица, то на лентовата линия се получава напрежение от 1.5 V върху 50
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Токът, който ще протече по линията може да бъде изчислен от формулата за
+ импеданс на линията 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2_4"
+
+\end_inset
+
+ и е равен на 30 mA.
+ Равенството на капацитетите между двете равнини показва, че тока, който
+ протича в тях ще бъде равен и той е 15 mA през равнината свързана към земя
+ и 15 mA през захранващата равнина.
+ Тока протичащ през захранващата равнина се дължи на разреждането на горните
+ кондензатори, които са били заредени, когато линията е била свързана към
+ земя - 0 V.
+ Пътя на разреждане е през захранващата шина на специализираната ИС към
+ 
+\begin_inset Quotes gld
+\end_inset
+
+pull-up
+\begin_inset Quotes grd
+\end_inset
+
+ в изхода на драйвера към предавателната линия.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig1_2_8.svg
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_0_8"
+
+\end_inset
+
+Обратен ток, когато е формирана лентова линия между захранващата равнина,
+ свързана към входно/изходния драйвер и равнината свързана към земя.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При анализа се вижда, че не е необходимо поставянето на допълнителен развързващ
+ кондензатор на входно/изходното захранване, за да се осигури правилно протичане
+ на обратните токове.
+ Всъщност, за да се постигне точния импеданс на линията, достатъчно капицетет
+ поставен между захранващата равнина и равнината свързана към земя, така
+ че да се осигури импеданс много по-малък от паралелния импеданс формиран
+ между всички предавателни линии, които споделят обратния път на тока.
+ Например, за всички честоти, развръзката трябва да импеданс доста под 0.5
+ 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, ако десет 50 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ линии са свързани, както е показани на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_7"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Като правило, свързващите линии, ще работят като предавателна линия, когато
+ електрическата дължина на линията (както е показано на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_3"
+
+\end_inset
+
+) е по-дълга от половината време за нарастване на сигнала.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_14"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_15"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_16"
+
+\end_inset
+
+ В случая може да бъде използвано както време за нарастване така и времето
+ за спадане на сигнала, в зависимост от това, кое от двете се случва по-бързо
+ във времето.
+ Отношението може да бъде дадено със следното уравнение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sqrt{L.C}\geqq0.5.t_{r}\label{eq:2_2_5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например, линия имаща закъснение 150 ps, се счита за електрически дълга
+ (и би имала свойствата на предавателна линия), ако сигнала който се разпростран
+ява по линията има време за нарастване от 300 ps или по-малко.
+ По-консервативни ограничения могат да бъдат поставени като например 0.2
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_11"
+
+\end_inset
+
+ до 0.125 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si_USI_17"
+
+\end_inset
+
+, вместо 0.5.
+\end_layout
+
+\begin_layout Standard
+От уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2_5"
+
+\end_inset
+
+ се вижда, че:
+\end_layout
+
+\begin_layout Itemize
+Времето за нарастване отнесено към дължината на линията, е тази която определя
+ характера на линията - със съсредоточени параметри или ще има поведението
+ на предавателна линия
+\end_layout
+
+\begin_layout Itemize
+Ширината на импулса и повтаряемостта не са фактори, които да определят дали
+ линията ще има поведение на предавателна линия и съответно би имала отражения.
+ Бавни повтарящи се импулси с бързо нарастващи фронтове също биха предизвикали
+ ефекти наблюдавани в предавтелните линии, също както при тесни импулси
+ с бързо нарастващи фронтове.
+ Ширината на импулса е важен за определяне как би изглеждал той при разпростране
+нието си по продължение на предавателната линия, но той не определя дали,
+ ще се получат отражения.
+\end_layout
+
+\begin_layout Standard
+Честа грешка, се получава при определяне на сигналната интегрираност, ако
+ предположим, че тестовата логика или друг вид бавни сигнали за диагностика
+ на връзките или при производствени тестове и конфигурации не трябва да
+ бъдат анализирани за сигнална интегрираност.
+ Въпреки, че тези сигнали може да са най-бавните в системата, те често се
+ генерират от същата схемна технология, която създава бързите сигнали, за
+ голяма производителност.
+ Като резултат се получават импулси с бързо нарастващи фронтове и бавно
+ време на повторение.
+ Ако не се вземат под внимание тези особенности, се получават отразени сигнали,
+ което може да доведе от своя страна до грешно превключване в схемната логика.
+\end_layout
+
+\begin_layout Standard
+Отношението между дължината на линията и времето за нарастване определя
+ поведението на свързващата линия, дали ще бъде като на линия със съсредоточени
+ параметри или като на дълга предавателна линия, но не сме обяснили защо
+ ширината на импулса не оказва влияние в този случай.
+ Ако предположим, че съпротивлението на линията 
+\emph on
+R
+\emph default
+ е много малко, от схемната теория се вижда, че пада на напрежение върху
+ индуктивността се определя от, времето необходимо на тока да се промени,
+ което може да бъде описано със следната формула:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V.l=L.\frac{\text{промяна в тока}}{\text{промяна във времето}}=L.\frac{di}{dt}\label{eq:2_2_6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+За дадена промяна в тока (
+\emph on
+di
+\emph default
+), пада на напрежение 
+\emph on
+V.l
+\emph default
+ се влияе от пълната индуктивност 
+\emph on
+L
+\emph default
+ и промяната във времето (
+\emph on
+dt
+\emph default
+).
+ С намаляване пада на напрежение върху индуктивностите, индивидуалните кондензат
+ори показани на Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_0_5"
+
+\end_inset
+
+ започват да имат поведение все повече, като че са свързани паралелно.
+ В такъв случай линията, вече не представлява разпределена RLC схема, а
+ просто една схема със съсредоточени параметри RLC (или, ако пада на напрежение
+ върху индуктивностите и резистора са много малки, то тя изглежда като схема
+ със съсредоточени параметри състояща се от само един кондензатор C).
+ При условие, че кондензаторите са разделени един от друг посредством падовете
+ на напрежение върху индуктивностите, когато то е достатъчно голямо и не
+ може да бъде пренебрегнато вече.
+ Тогава индуктивностите и кондензаторите са разпределени по продължение
+ на линията (RLC параметри) и линията има поведение на предавателна линия.
+\end_layout
+
+\begin_layout Standard
+Това означава, че защото къса свързваща линия няма голяма индуктивност,
+ то сигнала трябва да има много бърз нарастващ фронт, преди напрежението
+ между индуктивностите да стане забележимо и линията да започне да се държи
+ като дълга предавателна линия.
+ От друга страна, ако свързващата линия е дълга, то индуктивността ще бъде
+ значителна, което ще промени поведението да изглежда като предавателна
+ линия.
+ Интуитивно това означава, че късите свързващи линии не биха имали поведението
+ на предавателни линии, докато времето за нарастване на сигналите е достатъчно
+ малко, но дългите свързващи линии ще изглеждат като предавателни линии
+ дори за сигнали с бавно нарастващи фронтове.
+\end_layout
+
+\begin_layout Standard
+Като обобщение може да кажем, че:
+\end_layout
+
+\begin_layout Itemize
+Предавателната линия се състои от два или повече проводника: сигнален и
+ за връщането му
+\end_layout
+
+\begin_layout Itemize
+Обратния път определя капацитета, индуктивеността и съпротивлението на предавате
+лната линия
+\end_layout
+
+\begin_layout Itemize
+Предавателната линия може да бъде моделирана като последователно свързани
+ RLCG елементи
+\end_layout
+
+\begin_layout Itemize
+Схемните елементи на предавателна линия обикновенно се задават за единица
+ дължина
+\end_layout
+
+\begin_layout Itemize
+Капацитета и индуктивността на предавателната линия създават имеданса на
+ линията и са причината за закъснението на сигнала
+\end_layout
+
+\begin_layout Itemize
+Импеданса на предавателната линия е независим от дължината на линията, но
+ дължината определя времезакъснението във нея
+\end_layout
+
+\begin_layout Itemize
+Тока протича в обратния път на сигнала едновременно със сигналния ток като
+ огледален образ
+\end_layout
+
+\begin_layout Itemize
+Времето за нарастване на сигнала определя дали линията ще има поведение
+ на предавателна линия или като на линия със съсредоточени параметри
+\end_layout
+
+\begin_layout Itemize
+Линията ще има поведение на предавателна линия, ако нейната електрическа
+ дължина е по-голяма от тази на половината време необходимо за нарастване
+ на сигнала.
+ В някои случаи дори по-къси линии, ще имат поведение на предавателна линия.
+\end_layout
+
+\begin_layout Itemize
+Делител на напрежение действа между импеданса на драйвера и импеданса на
+ предавателната линия.
+ Този делител, определя сигналното напрежение възбудено в линията.
 \end_layout
 
 \begin_layout Section
-Understanding Microstrip and Stripline Transmission Lines
+Микролентови и лентови предавателни линии
+\end_layout
+
+\begin_layout Standard
+Свързващите линии върху печатните платки и интегралните схеми представляват
+ най-често микролентови или лентови предавателни линии.
+\end_layout
+
+\begin_layout Standard
+Figure 7.1 shows that microstrips are suspended over a single plane at a
+ height h, while striplines are sandwiched between two reference planes
+ that are separated by a distance b.
+ From Chapter 6 we know that these planes act as signal returns and can
+ either be ground or power planes.
+ As shown Figure 7.1, the microstrips are usually covered with a solder mask,
+ and the circuit board may be hermetically sealed with an encapsulate (not
+ shown).
+ By thinking of transmission lines as circuit elements rather than explaining
+ them with field theory, previous chapters did not show how the physical
+ differences in the construction of stripline and microstrips affect their
+ electrical characteristics.
+ These factors are addressed in this chapter.
 \end_layout
 
 \begin_layout Section
