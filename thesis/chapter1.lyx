@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@ figs-within-sections
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -55,6 +57,7 @@ figs-within-sections
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -70,7 +73,10 @@ figs-within-sections
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language german
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -93,7 +99,7 @@ figs-within-sections
  с цел успешно предаване на цифрови сигнали.
  За тази цел СИ взима идеи и практики от различни части на електроинженерството.
  Хората незапознати с аналоговата и радио електроника и тяхното разнообразие,
- може да сметнат СИ за мистерия, понякога дори непоследователна, а често
+ може да сметнат СИ за мистерия, понякога дори за непоследователна, а често
  и трудна за разбиране.
  Дизайнерите на цифрова логика, които са свикнали да работят с двоична логика
  и схеми, често я смятат за неточна, а аналоговата природа на сигналната
@@ -118,12 +124,13 @@ figs-within-sections
  на техническия проект, което води до сериозни технически грешки.
  Първият път, когато това става очевидно е свързан с проект за високоскоростна
  връзка, който е реализиран на 16 август 1858 г.
- Тогава Великобританската кралица Виктория изпраща поздравително съобщение
+ Тогава великобританската кралица Виктория изпраща поздравително съобщение
  на американския президент Буханан посредством първият успешно поставен
  трансатлантически телеграфен кабел 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_ref01"
+literal "true"
 
 \end_inset
 
@@ -131,6 +138,7 @@ key "si_USI_ref01"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_ref02"
+literal "true"
 
 \end_inset
 
@@ -138,6 +146,7 @@ key "si_USI_ref02"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_ref03"
+literal "true"
 
 \end_inset
 
@@ -151,6 +160,7 @@ key "si_USI_ref03"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_ref01"
+literal "true"
 
 \end_inset
 
@@ -210,22 +220,22 @@ key "si_USI_ref01"
  Всъщност, това не подобрява скоростта на предаване, защото основния проблем
  е изкривяването на импулсите, причинено от по-голямото времезакъснение
  (RC константа), а не силата на сигнала.
- По-голямото RC закъснение е било критично при проектирането на кабел за
- поставяне под вода, докато при експеримента за поставяне на доказване на
- концепцията, тестовете са били направени на сушата с кабел с различна време
- константа.
+ По-голямото времезакъснение е било критично при проектирането на кабел
+ за поставяне под вода, докато при експеримента за поставяне на доказване
+ на концепцията, тестовете са били направени на сушата с кабел с различна
+ време константа.
  Кабелите за поставяне на суша използват въздуха като изулатор, но подводните
  кабели използват водонепромукаема изулация, която значително увеличава
  капацитета.
  По-голямата времеконстанта изкривява импулсите, като по този начин само
  най-бавните от тях могат да бъдат правилно приети.
  Съвременните инженери, занимаващи се със сигнална интегрираност биха казали,
- че интерсимволната интерференция се създава от кабела, затихвайки високочестотн
+ че междусимволната интерференция се създава от кабела, затихвайки високочестотн
 ите (създадени от високо скоростните импулси на морзовия код) и позволявайки
  само нискочестотните (бавни импулси) да преминат.
  Същото поведение се наблюдава когато предаваме сигнали в модерните електронни
  схеми, използвайки печатни платки например.
- По време на процеса на тестване за откриване на причините за бавното предаване
+ По време на процеса на тестване за откриване причините за бавното предаване
  на сигналите, инженерите постепенно увеличавали напрежението, с цел подобряване
  скоростта на предаване, докато не развалили кабела един месец след като
  кралицата изпратила първото си съобщение.
@@ -239,7 +249,7 @@ key "si_USI_ref01"
 \begin_layout Standard
 Съвременните инженери и тези, които управляват такива проекти могат да избегнат
  подобни систематични проблеми, като този от проекта през 1858 г.
- при поставянето на транатлантическия кабел, като се запознаят с начините
+ при поставянето на трансатлантическия кабел, като се запознаят с начините
  на разпространение на импулси в дълги линии и да научат техниките за оправяне
  на тези грешки.
 \end_layout
@@ -337,7 +347,7 @@ reference "fig:2_0_1"
 
  се дефинира като времето необходимо за импулса да нарастне от 10% от стабилното
  си състояние до стойност 90%.
- Времето на задния фронт се дефинира по стщия начин както времето за нарастване,
+ Времето на задния фронт се дефинира по същия начин както времето за нарастване,
  но се отчита спада на амплитудата на сигнала от 90% до 10%.
  Предния и на задния фронт могат да бъдат измерени по много начини, но всеобщо
  приетия начин за измерване е т.н.
@@ -354,6 +364,7 @@ reference "fig:2_0_1"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_04"
+literal "true"
 
 \end_inset
 
@@ -361,6 +372,7 @@ key "si_USI_04"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_05"
+literal "true"
 
 \end_inset
 
@@ -378,19 +390,28 @@ ringing
 \begin_inset Quotes grd
 \end_inset
 
-.
+ (или т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+звънене
+\begin_inset Quotes grd
+\end_inset
+
+) на сигнала.
 \end_layout
 
 \begin_layout Section
-Времева и честотна области
+Времева и честотна област
 \end_layout
 
 \begin_layout Standard
 Импулси описани използвайки време за описание на сигнала се наричат сигнали
  във времева област.
  Осцилоскопите са най-често използваните инструменти работещи във времева
- област, както също SPICE схемните симулатори показват резултатите от симулациит
-е в също във времева област по подразбиране.
+ област, по същия начин както SPICE схемните симулатори показват резултатите
+ от симулациите в също във времева област по подразбиране.
 \end_layout
 
 \begin_layout Standard
@@ -399,7 +420,7 @@ ringing
  на печатните платки или интегралните схеми се променят за различните честоти.
  Този подход в честотната област е особенно подходящ когато изучаваме как
  загубите в предавателните линии оказват влияние върху формата (изкривяванията)
- и разпределението на импулсите (интерсимволна интерференция).
+ и разпределението на импулсите (междусимволна интерференция).
 \end_layout
 
 \begin_layout Section
@@ -415,6 +436,7 @@ ringing
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_06"
+literal "true"
 
 \end_inset
 
@@ -422,6 +444,7 @@ key "si_USI_06"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_07"
+literal "true"
 
 \end_inset
 
@@ -429,6 +452,7 @@ key "si_USI_07"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_08"
+literal "true"
 
 \end_inset
 
@@ -615,7 +639,8 @@ name "fig:2_0_3"
 \end_layout
 
 \begin_layout Standard
-Схемния модел на предавателната за малък сегмент от нея е показан на Фиг.
+Схемния модел на предавателна линия за малък сегмент от нея е показан на
+ Фиг.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -625,7 +650,7 @@ reference "fig:2_0_4"
 
 .
  Проводника има съпротивление R и индуктивност L, а капацитета формиран
- между проводника и земята се модлира с кондензатора C, като загубите в
+ между проводника и земята се моделира с кондензатора C, като загубите в
  него се задават с проводимостта G.
  Цялата предавателна линия се състои от безкрайно голям брой идентични копия
  на показания малък сегмент от линията.
@@ -724,7 +749,7 @@ reference "fig:2_0_4"
 Има загуби
 \emph default
 .
- Сигнала затихва, а ако загубите са огромни, то сигнала ще бъде още изкривен.
+ Сигнала затихва, а ако загубите са огромни, то сигнала би бил още по-изкривен.
 \end_layout
 
 \begin_layout Standard
@@ -742,6 +767,7 @@ reference "fig:2_0_4"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_09"
+literal "true"
 
 \end_inset
 
@@ -749,6 +775,7 @@ key "si_USI_09"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_10"
+literal "true"
 
 \end_inset
 
@@ -756,6 +783,7 @@ key "si_USI_10"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_11"
+literal "true"
 
 \end_inset
 
@@ -803,13 +831,13 @@ tpd=\sqrt{LC}\label{eq:2_2_2}
 \end_inset
 
  на метър.
- Това е разликата със съпротивлението, където дължината на предавателната
- линия има значение.
- Например, предавателна линия може да има 0.1 
-\begin_inset Formula $\Omega/\text{inch}$
+ Това е разликата със омическото съпротивление, където дължината на предавателна
+та линия има значение, като например, предавателна линия може да има 0.1
+ 
+\begin_inset Formula $\Omega/\text{cm}$
 \end_inset
 
-.
+ активно съпротивление.
 \end_layout
 
 \begin_layout Standard
@@ -819,8 +847,8 @@ tpd
 \emph default
  се мери в единици време (обикновенно пико секунди или нано секунди) за
  единица дължина.
- Например линия с дължина 10 inch, имаща закъснение 180 ps/inch ще има 1.8
- ns закъснение на сигнала за цялата дължина.
+ Например линия с дължина 10 cm, имаща закъснение 180 ps/cm ще има 1.8 ns
+ закъснение на сигнала за цялата дължина 10 cm.
 \end_layout
 
 \begin_layout Standard
@@ -842,10 +870,10 @@ reference "eq:2_2_2"
  ефектите свързани с индуктивността L, а загубите в капацитета G са значително
  по-малки от ефектите свързани с кондензатора C.
  Всъщност тези две уравнения изчисляват характеристичния импеданс без загуби
- и време закъснението без загуби в предавателната линия, защото загубите
- в проводника се представят с R, а загубите в кондензатора, представени
- с G се предполага, че са достатъчно малки, че да отпаднат от основното
- уравнение за импеданса и закъснението.
+ и време закъснението в предавателната линия, защото загубите в проводника
+ се представят с R, а загубите в кондензатора, представени с G се предполага,
+ че са достатъчно малки, че да отпаднат от основното уравнение за импеданса
+ и закъснението.
  Това е добра апроксимация при условие, че се разглежда предавателна линия
  върху печатна платка, а сигналите които се разпространяват имат време за
  нарастване от порядъка на 10 ns или по-бързи.
@@ -853,6 +881,7 @@ reference "eq:2_2_2"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_12"
+literal "true"
 
 \end_inset
 
@@ -1006,7 +1035,7 @@ Z_{0}=\frac{V_{i}}{I_{i}}\label{eq:2_2_3}
 \begin_inset Formula $V_{i}$
 \end_inset
 
-, което отговаря на падащото напрежение и началниято ток е 
+, което отговаря на падащото напрежение и началния ток е 
 \begin_inset Formula $I_{i}$
 \end_inset
 
@@ -1145,7 +1174,7 @@ name "fig:2_0_6"
 Стартовото напрежение, ще бъде по-голямо, когато се използват изходни драйвери
  с ниско изходно съпротивление.
  Това може първоначално да доведе до увеличаване на приетото напрежение,
- но трябва да се внимава, защото прекалено ниското съпротивление, ще доведе
+ но трябва да се внимава, защото прекалено ниското съпротивление, би довело
  до недопустимо големи отражения от предавателната линия.
 \end_layout
 
@@ -1374,8 +1403,8 @@ name "fig:2_0_8"
 При анализа се вижда, че не е необходимо поставянето на допълнителен развързващ
  кондензатор на входно/изходното захранване, за да се осигури правилно протичане
  на обратните токове.
- Всъщност, за да се постигне точния импеданс на линията, достатъчно капицетет
- поставен между захранващата равнина и равнината свързана към земя, така
+ За да се постигне точния импеданс на линията е достатъчно поставянето на
+ капицетет между захранващата равнина и равнината свързана към земя, така
  че да се осигури импеданс много по-малък от паралелния импеданс формиран
  между всички предавателни линии, които споделят обратния път на тока.
  Например, за всички честоти, развръзката трябва да импеданс доста под 0.5
@@ -1391,7 +1420,10 @@ name "fig:2_0_8"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:2_0_7"
+reference "fig:2_0_8"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -1413,6 +1445,7 @@ reference "fig:2_0_3"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_14"
+literal "true"
 
 \end_inset
 
@@ -1420,6 +1453,7 @@ key "si_USI_14"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_15"
+literal "true"
 
 \end_inset
 
@@ -1427,6 +1461,7 @@ key "si_USI_15"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_16"
+literal "true"
 
 \end_inset
 
@@ -1456,6 +1491,7 @@ key "si_USI_16"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_11"
+literal "true"
 
 \end_inset
 
@@ -1463,6 +1499,7 @@ key "si_USI_11"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si_USI_17"
+literal "true"
 
 \end_inset
 
@@ -1490,7 +1527,7 @@ reference "eq:2_2_5"
 Ширината на импулса и повтаряемостта не са фактори, които да определят дали
  линията ще има поведение на предавателна линия и съответно би имала отражения.
  Бавни повтарящи се импулси с бързо нарастващи фронтове също биха предизвикали
- ефекти наблюдавани в предавтелните линии, също както при тесни импулси
+ ефекти наблюдавани в предавателните линии, също както при тесни импулси
  с бързо нарастващи фронтове.
  Ширината на импулса е важен за определяне как би изглеждал той при разпростране
 нието си по продължение на предавателната линия, но той не определя дали,
@@ -1573,15 +1610,12 @@ reference "fig:2_0_5"
  може да бъде пренебрегнато вече.
  Тогава индуктивностите и кондензаторите са разпределени по продължение
  на линията (RLC параметри) и линията има поведение на предавателна линия.
-\end_layout
-
-\begin_layout Standard
-Това означава, че защото къса свързваща линия няма голяма индуктивност,
- то сигнала трябва да има много бърз нарастващ фронт, преди напрежението
- между индуктивностите да стане забележимо и линията да започне да се държи
- като дълга предавателна линия.
+ Това означава, че ако къса свързваща линия няма голяма индуктивност, то
+ сигнала трябва да има много бърз нарастващ фронт, преди напрежението между
+ индуктивностите да стане забележимо и линията да започне да се държи като
+ дълга предавателна линия.
  От друга страна, ако свързващата линия е дълга, то индуктивността ще бъде
- значителна, което ще промени поведението да изглежда като предавателна
+ значителна, което ще промени поведението да изглежда като на дълга предавателна
  линия.
  Интуитивно това означава, че късите свързващи линии не биха имали поведението
  на предавателни линии, докато времето за нарастване на сигналите е достатъчно
@@ -1620,7 +1654,7 @@ reference "fig:2_0_5"
 
 \begin_layout Itemize
 Импеданса на предавателната линия е независим от дължината на линията, но
- дължината определя времезакъснението във нея
+ дължината определя времезакъснението в нея
 \end_layout
 
 \begin_layout Itemize
@@ -1653,26 +1687,1462 @@ reference "fig:2_0_5"
 \begin_layout Standard
 Свързващите линии върху печатните платки и интегралните схеми представляват
  най-често микролентови или лентови предавателни линии.
+ Фиг.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показва микролентовата линия представлява предавателна линия поставена
+ върху равнина на отстояние 
+\begin_inset Formula $h$
+\end_inset
+
+, докато лентовата линия е поставена между две референсни равнини, които
+ се намират на разстояние 
+\begin_inset Formula $b$
+\end_inset
+
+ една от друга.
+ Референсните равнини изпълняват ролята на обратен път за сигнала и могат
+ да бъдат както равнина на референтна 
+\begin_inset Quotes gld
+\end_inset
+
+земя
+\begin_inset Quotes grd
+\end_inset
+
+, така и равнина на референсно захранване.
+ На фигурата е показано, че много често микролентовата линия бива покрита
+ с т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+solder mask
+\begin_inset Quotes grd
+\end_inset
+
+, а в някои случаи се поставя в херметически затворени детайли.
+ В случая ако разглеждаме предавателните линии като схемен елемент, не е
+ възможно да обясним разликите между двете предавателни линии, освен ако
+ не се опитаме да ги обясним с теорията за уравненията на електромагнитното
+ поле.
+ 
 \end_layout
 
 \begin_layout Standard
-Figure 7.1 shows that microstrips are suspended over a single plane at a
- height h, while striplines are sandwiched between two reference planes
- that are separated by a distance b.
- From Chapter 6 we know that these planes act as signal returns and can
- either be ground or power planes.
- As shown Figure 7.1, the microstrips are usually covered with a solder mask,
- and the circuit board may be hermetically sealed with an encapsulate (not
- shown).
- By thinking of transmission lines as circuit elements rather than explaining
- them with field theory, previous chapters did not show how the physical
- differences in the construction of stripline and microstrips affect their
- electrical characteristics.
- These factors are addressed in this chapter.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig2_3_1.svg
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_3_1"
+
+\end_inset
+
+Микролентова и лентова линия с ширина 
+\begin_inset Formula $w$
+\end_inset
+
+, дебелина 
+\begin_inset Formula $t$
+\end_inset
+
+, и разстояния 
+\begin_inset Formula $h$
+\end_inset
+
+ или 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Измерено с Ом-метър, съпротивлението на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ върху печатната платка (DC съпротивление) обикновенно е от порядъка на
+ няколко ома или по-малко, но се увеличава до значително по-големи стойности,
+ когато измерването се прави при високи честоти.
+ Това увеличение на съпротивлението означава, че загубите в проводника са
+ значително по-големи, от тези измерени при ниски честоти.
+\end_layout
+
+\begin_layout Standard
+Съпротивлението на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ зависи от специфичното съпротивление на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ (измерено в 
+\begin_inset Formula $[\Omega.m]$
+\end_inset
+
+), напречното сечение (дебелина и ширина), дължината 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ и температурата.
+ Специфичното съпротивление на медта зависи до голяма степен от това, как
+ е формирана, като типична стойност може да бъде приета 
+\begin_inset Formula $1.75\:x\:10^{-8}\;\Omega.m$
+\end_inset
+
+ при стайна температура.
+ Съпротивлението на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ се увеличава с увеличаване на температурата, като стойността зависи от
+ използваната медна сплав и нормално съпротивлението се увеличава с малко
+ на 
+\begin_inset Formula $4\%$
+\end_inset
+
+ за всеки 
+\begin_inset Formula $10\,^{o}C$
+\end_inset
+
+ нарастване на околната температура.
+ Това е повече от 
+\begin_inset Formula $25\%$
+\end_inset
+
+ увеличение на съпротивлението при ниски честоти, ако околната температура
+ се промени от 
+\begin_inset Formula $25\,^{o}C$
+\end_inset
+
+ на 
+\begin_inset Formula $85\,^{o}C$
+\end_inset
+
+.
+ Повишаването на съпротивлението увеличава загубите в проводника и затова
+ инженерите занимаващи се със сигнална интегрираност би трябвало да отчитат
+ ефектите от повишаването на температурата при използването на електромагнитни
+ симулатори, отчитайки това при моделирането на предавателните линии в най-лошия
+ случай (worst-case scenario).
+ 
+\end_layout
+
+\begin_layout Standard
+Електромагнитните симулатори използват проводимостта (реципрочната стойност
+ на специфичното съпротивление в единици 
+\begin_inset Formula $S/m$
+\end_inset
+
+), вместо специфичното съпротивление за описание характеристиките на метала.
+ В зависимост от използваната сплав, при стайна температура проводимостта
+ на медта е около 
+\begin_inset Formula $5.7\:x\:10^{7}\;S/m$
+\end_inset
+
+.
+ На фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ е показано съпротивлението на две медни 
+\begin_inset Quotes gld
+\end_inset
+
+писти
+\begin_inset Quotes grd
+\end_inset
+
+ с правоъгълно сечение при стайна температура.
+ Съпротивлението се увеличава значително за предавателната линия с дебелина
+ 16 
+\begin_inset Formula $\mu m$
+\end_inset
+
+ и ширина под 0.2 
+\begin_inset Formula $mm$
+\end_inset
+
+.
+ За изчисление съпротивлението на линиите се използва следното уравнение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{DC}=\frac{\rho}{A}.L\label{eq:2_2_6-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig2_3_2.svg
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_3_2"
+
+\end_inset
+
+DC съпротивление при стайна температура (
+\begin_inset Formula $25\,^{o}C$
+\end_inset
+
+) на правоъгълна 
+\begin_inset Quotes gld
+\end_inset
+
+писта
+\begin_inset Quotes grd
+\end_inset
+
+ с дебелина 16 
+\begin_inset Formula $\mu m$
+\end_inset
+
+ и 30 
+\begin_inset Formula $\mu m$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ако разгледаме от близо микролентовата линия, ще видим, че между линията
+ и референсата равнина се формира т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+паралелен кондензатор
+\begin_inset Quotes grd
+\end_inset
+
+, формиран между двете метални повърхности и диелектрика поддържащ 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+.
+ При лентовата линия същия ефект се наблюдава между двете референсни равнини,
+ дори едната да е захранваща референсна равнина, а другата референсна равнина
+ на 
+\begin_inset Quotes gld
+\end_inset
+
+земята
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Увеличаването на разстоянието 
+\begin_inset Formula $h$
+\end_inset
+
+ на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ от равнината или намаляването на диелектричната константа 
+\begin_inset Formula $\varepsilon_{r}$
+\end_inset
+
+ (понякога се нарича 
+\begin_inset Formula $Dk$
+\end_inset
+
+ в литературата) намалява капацитета.
+ Типични стойности на диелектричната константа и начина по който се променя
+ в зависимост от честотата за три вида 
+\begin_inset Formula $FR4$
+\end_inset
+
+ материали е даден в следната таблица:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ламинат
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 MHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500 MHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 GHz
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FR404
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.6 (0.025)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.26 (0.014)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.25 (0.014)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FR406
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.6 (0.023)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.28 (0.014)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.29 (0.014)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FR408
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8 (0.010)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.7 (0.010)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table:2_1"
+
+\end_inset
+
+Диелектрична константа и диелектрични загуби за три типа 
+\begin_inset Formula $FR4$
+\end_inset
+
+ материали с отношение стъкло-смола от 44%.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поради поляризирането на молекулите в диелектрика, които се влияят от честотата
+ и температурата се наблюдава спад на диелектричната константа с увеличаване
+ на честотата, но при някои ламинати тя може да започне да се увеличава
+ след достигане на минималната стойност при средни честоти например.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LinesAndElectromagnFields"
+literal "true"
+
+\end_inset
+
+ Такъв пример в таблицата е FR406, който има такова поведение, като диелектрична
+та константа 
+\begin_inset Formula $\varepsilon_{r}$
+\end_inset
+
+, намалява от 4.6 при 1 MHz честота до 4.28 при 500 MHz и пак се изкачва леко
+ до 4.29 при 1 GHz.
+ Скоростта на промяна зависи от състава на смолата и количеството стъкло
+ (отношението стъкло-смола).
+\end_layout
+
+\begin_layout Standard
+Лентовите линии се формират в диелектрик (или два, с много близка диелектрична
+ константа), то може да кажем, че лентовите линии се намират в хомогенен
+ диелектрик с диелектрична констата равна на 
+\begin_inset Formula $\varepsilon_{r}$
+\end_inset
+
+.
+ Солдър маската, покриваща микролентовата линия има диелектрична константа
+ близка до типичната стойност на подложката (в случая FR4), така че микролентови
+те линии може да се каже, че имат два диелектрика: ламинат/солдер маска
+ и въздух.
+ Поради факта, че тези два диелектрика имат различни диелектрични константи,
+ микролентовата линия не е хомогенна.
+ Възможно е обаче да обединим двадата диелектрика с една обобщена стойност,
+ която се нарича ефективна диелектрична константа 
+\begin_inset Formula $\text{\ensuremath{\varepsilon_{r_{eff}}}}$
+\end_inset
+
+.
+ Ефективната диелектрична проницаемост е еквивалентна стойност, която взема
+ под внимание стойността на 
+\begin_inset Formula $\text{\ensuremath{\varepsilon_{r}}}$
+\end_inset
+
+ на подложката, както и ширината, дебелината и отстоянието от референсната
+ равнина 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Физическите размери са важни, защото те определят каква част от енергията
+ на сигнала се разпространява във въздуха, каква част от нея се разпространява
+ в подложката и колко влияние оказва всяка от тях върху капацитета и закъснениет
+о на сигнала.
+\end_layout
+
+\begin_layout Standard
+Ефективната диелектрична проницаемост има стойност между 1 (за полета разпростра
+няващи се изцяло във въздух) и стойността на диелектричната проницаемост
+ на ламината (подложката).
+ В този случай ефективната диелектрична проницаемост винаги ще бъде по-малка
+ от диелектричната константа на подложката, така че сигнали разпространяващи
+ се в микролентови линии, ще имат по-малка диелектрична константа в сравнение
+ с лентовите линии.
+ Това важи дори в случаи, когато двете линии използват един и същ материал
+ за подложка, което прави електрическите характеристики на микролентовите
+ линии доста по-различни от тези на лентовите.
+\end_layout
+
+\begin_layout Standard
+Разликите в капацитета и индуктивността за различни ширини и три различен
+ характеристични импеданса за микролентова и лентова линии, може да бъде
+ видян на фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Линиите са правоъгълни, а използваната диелектрична константа 
+\begin_inset Formula $\varepsilon_{r}=4.2$
+\end_inset
+
+, като микролентовата линия е покрита със солдер маска с дебелина 
+\begin_inset Formula $25.4\:\text{\ensuremath{\mu}m}$
+\end_inset
+
+, която също има стойност на 
+\begin_inset Formula $\varepsilon_{r}=4.2$
+\end_inset
+
+.
+ От графиката се вижда, че линиите с по-голям характеристичен импеданс имат
+ по-малък капацитет в сравнение с линиите, имащи по-малък импеданс и при
+ еднакъв характеристичен импеданс, лентовите линии имат по-голям капацитет
+ в сравнение с микролентовите линии.
+ Например капацитета на 0.13 mm широка линия, микролентова линия с характеристиче
+н импеданс 
+\begin_inset Formula $60\,\Omega$
+\end_inset
+
+ има около 
+\begin_inset Formula $2.6\,pF/inch$
+\end_inset
+
+ капацитет, който се увеличава до 
+\begin_inset Formula $4.0\,pF/inch$
+\end_inset
+
+ за линия с характеристичен импеданс 
+\begin_inset Formula $40\,\Omega$
+\end_inset
+
+.
+ За разлика при лентова линия с характеристичен импеданс 
+\begin_inset Formula $40\,\Omega$
+\end_inset
+
+, за всяка една ширина на линията се наблюдава капацитет равен на 
+\begin_inset Formula $4.3\,pF/inch$
+\end_inset
+
+, което е около 
+\begin_inset Formula $10\%$
+\end_inset
+
+ по-висока стойност в сравнение с микролентовата линия.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig2_3_3.svg
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_3_3"
+
+\end_inset
+
+Разлики в капацитета и индуктивността за правоъгълни микролентови (прекъсната
+ линия) и лентови (непрекъсната линия) линии.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Като цяло загубите или т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+ъгъл на диелектрични загуби
+\begin_inset Quotes grd
+\end_inset
+
+ има най-висока стойност за ниски честоти, и стойността на ъгъла на диелектрични
+ загуби намалява с увеличаване на честотата.
+ Тази тенденция се наблюдава за трите FR4 подложки от таблица 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:2_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Например загубите в първата подложка са 0.025 при честота 1 MHz, но намаляват
+ до 0.014 за по-високи честоти.
+ В повечето случаи, веднъж установени загубите при достатъчно високи честоти
+ остават непроменени и остават почти константни, а в някои случаи се наблюдава
+ отново покачване след определени високи честоти.
+ Влагата може да окаже сериозно влияние върху загубите и да ги повиши при
+ повишена влага в околната среда.
+\end_layout
+
+\begin_layout Standard
+Проводимостта е параметър използван често в много SPICE базирани модели
+ на предавателни линии със загуби, за да бъдат отчетени диелектричните загуби
+ в лентовите и микролентовите линии.
+ Тя може да бъде моделирана като ресистор с паралелно свързан кондензатор,
+ който представлява капацитета на печатния проводник.
+ По-големите стойности на проводимостта представляват по-големи диелектрични
+ загуби, като стойността може да бъде определена от капацитета на линията,
+ честотата и стойността на ъгъла на диелектрични загуби 
+\begin_inset Formula $tan(\delta)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G=6.28.C.f.tan(\delta)\label{eq:2_2_6-2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+От уравнението се вижда, че с увеличаване капацитета се увеличава и проводимостт
+а 
+\begin_inset Formula $G$
+\end_inset
+
+, което кореспондира на по-големи диелектрични загуби.
+ Можем да заключим, че диелектричните загуби са по-големи за линии с по-малък
+ импеданс (защото имат по-голям капацитет), който увеличава загубите пропорциона
+лно с ъгъла на диелектрични загуби 
+\begin_inset Formula $tan(\delta)$
+\end_inset
+
+.
+ Вижда се, че за даден импеданс капацитета на лентова предавателна линия
+ е един независимо от ширината на линията, но за микролентова линия, той
+ се променя в зависимост от ширината.
+ Формулата отчита диелектричните загуби при условие, че стойността на ъгъла
+ на диелектрични загуби не се променя.
+ Ефектите в микролентовите линии са малки, особенно ако са покрити със солдер
+ маска, и въпреки, че от уравнението не е видимо директно, поради факта,
+ че диелектричната константа на въздуха е по-малка от тази на подложката,
+ за всеки импеданс, проводимостта G е по-малка за микролентова линия в сравнение
+ със същата изпълнена в лентово изпълнение.
+\end_layout
+
+\begin_layout Standard
+Например, за FR4 (
+\begin_inset Formula $\varepsilon_{r}=4.2,\:tan(\delta)=0.02$
+\end_inset
+
+), проводимостта G е равна на малко над 
+\begin_inset Formula $17\,mS/m$
+\end_inset
+
+ за 
+\begin_inset Formula $50\,\Omega$
+\end_inset
+
+ лентова линия с дебелина на медта 
+\begin_inset Formula $18\,\mu m$
+\end_inset
+
+, независимо от ширината измерена при честота 
+\begin_inset Formula $1\,GHz$
+\end_inset
+
+.
+ На същата честота измерена микролентова линия има малко над 
+\begin_inset Formula $15\,mS/m$
+\end_inset
+
+ и ширина 
+\begin_inset Formula $127\,\mu m$
+\end_inset
+
+, покрита със солдермаска с дебелина 
+\begin_inset Formula $25\,\mu m$
+\end_inset
+
+.
+ Ако увеличим ширината на 
+\begin_inset Formula $50\,\Omega$
+\end_inset
+
+-ната линия, покрита със солдер маска на 
+\begin_inset Formula $254\,\mu m$
+\end_inset
+
+, то проводимостта пада до 
+\begin_inset Formula $14.7\,mS/m$
+\end_inset
+
+, като тя може да падне дори до 
+\begin_inset Formula $9\,mS/m$
+\end_inset
+
+, ако ширината на микролентовата линия остане 
+\begin_inset Formula $254\,\mu m$
+\end_inset
+
+, а импеданса се увеличи на 
+\begin_inset Formula $75\,\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Посочения пример показва предимството при използване на широка, високоомна
+ микролентова линия за опроводяването на високочестотни сигнали, особенно
+ ако използваме по-евтина печатна платка с големи диелектрични загуби.
+\end_layout
+
+\begin_layout Standard
+Печатните проводници изпитват т.н.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+паралелна индуктивност
+\begin_inset Quotes grd
+\end_inset
+
+, която се осъществява между проводника и равнината на обратния път.
+ Индуктивността се определя от височината и ширината на линиите.
+ На фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ е показана зависимостта, при която индуктивността се увеличава.
+ Увеличаването на височината 
+\begin_inset Formula $h$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ от фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ води до увеличаване на индуктивността, докато увеличаването на ширината
+ 
+\begin_inset Formula $w$
+\end_inset
+
+, я намалява.
+ Като цяло при много високи честоти, индуктивността зависи главно от формата
+ и размерите на линията.
+ На фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_3_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ са показани индуктивностите за няколко микролентови и лентови линии, с
+ идеално правоъгълна форма, диелектрична константа 
+\begin_inset Formula $4.2$
+\end_inset
+
+, като микролентовите линии са покрити със солдер маска с дебелина 
+\begin_inset Formula $25\,\mu m$
+\end_inset
+
+, която има същата диелектрична проницаемост 
+\begin_inset Formula $\varepsilon_{r}=4.2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Линиите с малък характеристичен импеданс имат сравнително по-малка индуктивност
+ в сравнение с тези, с голям характеристичен импеданс.
+ Например, лентова линия с импеданс 
+\begin_inset Formula $40\,\Omega$
+\end_inset
+
+ има индуктивност 
+\begin_inset Formula $7\,nH/inch$
+\end_inset
+
+, за всяка ширина и 
+\begin_inset Formula $10.5\,nH/inch$
+\end_inset
+
+ за лентова линия с импеданс 
+\begin_inset Formula $60\,\Omega$
+\end_inset
+
+.
+ Може да се види също, че за даден импеданс и ширина, лентовата линия има
+ по-голяма индуктивност в сравнение с микролентовата.
+ Например, лентова линия с ширина 
+\begin_inset Formula $127\,\mu m$
+\end_inset
+
+ и характеристичен импеданс 
+\begin_inset Formula $50\,\Omega$
+\end_inset
+
+ има индуктивност 
+\begin_inset Formula $8.7\,nH/inch$
+\end_inset
+
+, докато микролентовата има 
+\begin_inset Formula $8\,nH/inch$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Скин ефекта променя съпротивлението на предавателните линии в зависимост
+ от честотата.
+ За ниски честоти тока, генериран от сигнал генератор, протича в цялото
+ напречно сечение на печатния проводник.
+ За високи честоти, скин ефекта кара тока да протича в близост до повърхността
+ на печатния проводник в област обусловена от дълбочината на скин ефекта.
+ Дълбочината на скин ефекта или т.н.
+ дълбочина на 
+\begin_inset Quotes gld
+\end_inset
+
+проникване
+\begin_inset Quotes grd
+\end_inset
+
+ е голяма за ниски честоти и това е причината, тока да протича през цялото
+ сечение на печатния проводник за постоянно токов сигнал.
+\end_layout
+
+\begin_layout Standard
+За високи честоти, съпротивлението на 
+\begin_inset Quotes gld
+\end_inset
+
+пистата
+\begin_inset Quotes grd
+\end_inset
+
+ и обратния път (
+\begin_inset Formula $R_{ac}$
+\end_inset
+
+) се увеличава като функцията корен квадратен от честотата, както е показано
+ във формулата:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{ac\,f2}=R_{ac\,f1}\sqrt{\frac{f_{2}}{f_{1}}}\label{eq:2_3_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например, увеличаването на честотата четири пъти от 
+\begin_inset Formula $500\:MHz$
+\end_inset
+
+ до 
+\begin_inset Formula $2\:GHz$
+\end_inset
+
+, ще увеличи съпротивлението 2 пъти.
+ Скин ефекта започва да оказва влияние в печатни проводници с дебелина на
+ медта от 
+\begin_inset Formula $35\:\mu m$
+\end_inset
+
+ за честоти по-големи от 
+\begin_inset Formula $14\:MHz$
+\end_inset
+
+, a за дебелина 
+\begin_inset Formula $18\:\mu m$
+\end_inset
+
+ се появява при честоти по-големи от 
+\begin_inset Formula $65\:MHz$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
-Understanding Trace-to-Trace Coupling
+Взаимодействие между предавателни линии
+\end_layout
+
+\begin_layout Standard
+Взаимодействието между предавателните линии се дължи на паразитните капацитети
+ и индуктивности, които могат да бъдат описани като промени на техните импеданси
+ и време за разпространение на сигнала.
+ Познанието за паразитните влияния дава основа за по-нататъшното разбиране
+ на ефекти като 
+\begin_inset Quotes gld
+\end_inset
+
+прослушване
+\begin_inset Quotes grd
+\end_inset
+
+ (crosstalk), сериойно предаване на данни, терминиране на предавателни линии
+ и отражения.
+\end_layout
+
+\begin_layout Standard
+Както беше разгледано в предишната подточка капацитета се създава между
+ предавателната линия и равнината, която служи като обратен път на тока
+ на сигнала.
+ Всъщност освен този собствения капацитет (и собствената индуктивност),
+ паразитен свързващ капацитет и индуктивност се образуват между линиите.
+ Всъщност предавателната линия може да бъде разгледана като дълга верига
+ от последователно свързани много малки, разположени на еднакво разстояние
+ едни от други схемни компоненти.
+ По същия начин може да бъдат представени и паразитните схемни елементи
+ между предавателни линии (т.н.
+ взаимосвързващи компоненти).
+ Линията сама по себе си е изградена от безкраен брой от тези малки сегменти,
+ всеки от които има идентични собствени и взаимни елементи.
+ Това означава, че по същия начин както собствените елементи, така и взаимните
+ могат да бъдат представени за единица дължина.
+\end_layout
+
+\begin_layout Standard
+Математически е удобно (дори е желателно) собствените и взаимните елементи
+ да бъдат представени под формата на матрици.
+ Както е показано на фиг.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2_4_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ се използва схема за идентификация на участващите елементи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter1/fig2_4_1.svg
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2_4_1"
+
+\end_inset
+
+Напречен разрез и схемен модел на малък сегмент от линия показващ капацитетите
+ и индуктивностите за три предавателни линии.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например индуктивностите между трите предавателни линии могат да бъдат представе
+ни в матричен вид както следва:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\begin{array}{ccc}
+L_{11} & L_{12} & L_{13}\\
+L_{21} & L_{22} & L_{23}\\
+L_{31} & L_{32} & L_{33}
+\end{array}\qquad C=\begin{array}{ccc}
+C_{11} & C_{12} & C_{13}\\
+C_{21} & C_{22} & C_{23}\\
+C_{31} & C_{32} & C_{33}
+\end{array}\label{eq:2_4_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Собствената индуктивност (
+\begin_inset Formula $L_{s}$
+\end_inset
+
+) на предавателна линия 1 е обозначена в матрицата като 
+\begin_inset Formula $L_{11}$
+\end_inset
+
+ и е измерена, при условие, че ток не протича през останалите линии.
+ Взаимната индуктивност е дадена съответно с (
+\begin_inset Formula $L_{m}$
+\end_inset
+
+), като например свързващата индуктивност между линия 1 и 2 е дадена в матрицата
+ с коефициента 
+\begin_inset Formula $L_{12}$
+\end_inset
+
+.
+ Собствения капацитет 
+\begin_inset Formula $C_{s}$
+\end_inset
+
+ и взаимния капацитет 
+\begin_inset Formula $C_{m}$
+\end_inset
+
+съответно са зададени по същия начин като 
+\begin_inset Formula $C_{11}$
+\end_inset
+
+ и останалите диагонални коефициенти като 
+\begin_inset Formula $C_{22}$
+\end_inset
+
+ в матрицата са капацитетите към 
+\begin_inset Quotes gld
+\end_inset
+
+маса
+\begin_inset Quotes grd
+\end_inset
+
+ (
+\begin_inset Quotes gld
+\end_inset
+
+земя
+\begin_inset Quotes grd
+\end_inset
+
+) плюс сума от всички взаимни капацитети, когато са свързани към 
+\begin_inset Quotes gld
+\end_inset
+
+земя
+\begin_inset Quotes grd
+\end_inset
+
+, като например:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{11}=C_{10}+C_{12}+C_{13}\label{eq:2_4_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ако направим разместване в уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_4_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, можем да намерим капацитета към 
+\begin_inset Quotes gld
+\end_inset
+
+маса
+\begin_inset Quotes grd
+\end_inset
+
+ на първата предавателна линия само, а именно 
+\begin_inset Formula $C_{10}$
+\end_inset
+
+, който може да бъде представен като собствения капацитет 
+\begin_inset Formula $C_{11}$
+\end_inset
+
+минус всички останали взаимни капацитети.
+\end_layout
+
+\begin_layout Standard
+За илюстрация, матриците на индуктивността и капацитета за единици дължина
+ на метър за двойка предавателни линии е намерена посредством 2D калкулатор
+ на поле и те изглеждат както следва:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\begin{array}{ccc}
+2.876E-07 & 3.564E-08 & 9.859E-09\\
+3.564E-08 & 2.863E-07 & 3.564E-08\\
+9.859E-09 & 3.564E-08 & 2.876E-07
+\end{array}\label{eq:2_4_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\begin{array}{ccc}
+1.176E-10 & -5.306E-12 & -6.049E-13\\
+-5.306E-12 & 1.180E-10 & -5.306E-12\\
+-6.049E-13 & -5.306E-12 & 1.176E-10
+\end{array}\label{eq:2_4_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В посочения пример, собствената индуктивност 
+\begin_inset Formula $L_{11}=287.6\:nH/m$
+\end_inset
+
+, а взаимната индуктивност между линия 1 и 2 
+\begin_inset Formula $L_{12}=35.64\:nH/m$
+\end_inset
+
+ и взаимната индуктивност между линия 1 и 3 
+\begin_inset Formula $L_{13}=9.859\:nH/m$
+\end_inset
+
+.
+ Целият капацитет към 
+\begin_inset Quotes gld
+\end_inset
+
+маса
+\begin_inset Quotes grd
+\end_inset
+
+ на линия 1 е 
+\begin_inset Formula $C_{11}=117.6\:pF/m$
+\end_inset
+
+, в случая когато линии 2 и 3 са окъсени (даден на 
+\begin_inset Quotes gld
+\end_inset
+
+маса
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Взаимния капацитет от линия 1 към линия 2 е 
+\begin_inset Formula $C_{12}=-5.306\:pF/m$
+\end_inset
+
+, а за линия 1 към линия 3 е 
+\begin_inset Formula $C_{13}=-0.6049\:pF/m$
+\end_inset
+
+.
+ Представянето на взаимните капацитети като отрицателни числа има своите
+ предимства.
+ Тук може да отбележим, че общия капацитет е сума от два или повече капацитета
+ и в случая е равен на 
+\begin_inset Formula $-5.911\:pF$
+\end_inset
+
+.
+ Интуитивно може да видим, че предавателни линии 1 и 2 са разположени по-близко
+ една спрямо друга, за разлика от линии 1 и 3, което автоматично може да
+ ни покаже, че капацитета между линии 1 и 2 трябва да бъде по-голям от този
+ между линии 1 и 3.
+ Собствения кпацитет на линия 1 - 
+\begin_inset Formula $C_{11}$
+\end_inset
+
+ трябва да бъде по-голям от стойноста на взаимните капацитети.
+ Чрез изследване на тези матрици, забелязваме, че взаимните компоненти от
+ двете страни на диагонала на матриците са еднакви.
+ Например 
+\begin_inset Formula $L_{12}$
+\end_inset
+
+ има същата стойност като 
+\begin_inset Formula $L_{21}$
+\end_inset
+
+ (
+\begin_inset Formula $35.64\text{\:nH/m}$
+\end_inset
+
+).
+ В това има смисъл, защото бихме очаквали взаимните компоненти между линии
+ 1 и 2 да са еднакви независимо дали правим измерванията от страна на линия
+ 1 към линия 2 или обратно.
+ Схемините симулатори като SPICE се възползват от тази симетрия и изискват
+ попълването на половината от матрицата само, при създаването на модели
+ на предавателни линии.
 \end_layout
 
 \begin_layout Section

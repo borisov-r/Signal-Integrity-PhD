@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@ figs-within-sections
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -55,6 +57,7 @@ figs-within-sections
 \suppress_date true
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -70,7 +73,10 @@ figs-within-sections
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language german
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -415,6 +421,22 @@ DC - direct current (постоянен ток)
 \end_layout
 
 \begin_layout Standard
+tpd - Transmission Line Propagation Delay
+\end_layout
+
+\begin_layout Standard
+Dk - Dielectric Constant (диелектрична константа)
+\end_layout
+
+\begin_layout Standard
+G - Conductivity - проводимост
+\end_layout
+
+\begin_layout Standard
+Crosstalk - прослушване
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -569,10 +591,6 @@ filename "bibliography.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-test
 \end_layout
 
 \end_body

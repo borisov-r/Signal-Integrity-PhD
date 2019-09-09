@@ -21,7 +21,7 @@ Template instructions for installation:
 
 ### Arch linux required packages
 
-Packages: texlive-most texlive-langcyrillic
+Packages: texlive-most texlive-langcyrillic texlive-langcyrillic
 
  * [TEX_live](https://wiki.archlinux.org/index.php/TeX_Live)
 
